@@ -187,7 +187,101 @@ body {
 }
 
 .portfolio {
-  height: 100vh;
-  color: #d6e8ee;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  height: 95vh;
+  color: #ffffff;
+  background-image: repeating-linear-gradient(45deg, rgba(136, 136, 136, 0.13) 0px, rgba(136, 136, 136, 0.13) 27px, rgba(192, 192, 192, 0.13) 27px, rgba(192, 192, 192, 0.13) 37px, rgba(34, 34, 34, 0.13) 37px, rgba(34, 34, 34, 0.13) 50px, rgba(169, 169, 169, 0.13) 50px, rgba(169, 169, 169, 0.13) 84px, rgba(118, 118, 118, 0.13) 84px, rgba(118, 118, 118, 0.13) 110px, rgba(133, 133, 133, 0.13) 110px, rgba(133, 133, 133, 0.13) 140px, rgba(12, 12, 12, 0.13) 140px, rgba(12, 12, 12, 0.13) 159px), repeating-linear-gradient(45deg, rgba(134, 134, 134, 0.13) 0px, rgba(134, 134, 134, 0.13) 17px, rgba(172, 172, 172, 0.13) 17px, rgba(172, 172, 172, 0.13) 29px, rgba(108, 108, 108, 0.13) 29px, rgba(108, 108, 108, 0.13) 67px, rgba(170, 170, 170, 0.13) 67px, rgba(170, 170, 170, 0.13) 85px, rgba(135, 135, 135, 0.13) 85px, rgba(135, 135, 135, 0.13) 122px, rgba(80, 80, 80, 0.13) 122px, rgba(80, 80, 80, 0.13) 168px, rgba(24, 24, 24, 0.13) 168px, rgba(24, 24, 24, 0.13) 203px), repeating-linear-gradient(45deg, rgba(251, 251, 251, 0.1) 0px, rgba(251, 251, 251, 0.1) 99px, rgba(17, 17, 17, 0.1) 99px, rgba(17, 17, 17, 0.1) 158px, rgba(39, 39, 39, 0.1) 158px, rgba(39, 39, 39, 0.1) 259px, rgba(4, 4, 4, 0.1) 259px, rgba(4, 4, 4, 0.1) 394px, rgba(36, 36, 36, 0.1) 394px, rgba(36, 36, 36, 0.1) 514px, rgba(251, 251, 251, 0.1) 514px, rgba(251, 251, 251, 0.1) 622px, rgba(76, 76, 76, 0.1) 622px, rgba(76, 76, 76, 0.1) 737px), -webkit-gradient(linear, left top, right top, from(#3b3130), to(#152c2b));
+  background-image: repeating-linear-gradient(45deg, rgba(136, 136, 136, 0.13) 0px, rgba(136, 136, 136, 0.13) 27px, rgba(192, 192, 192, 0.13) 27px, rgba(192, 192, 192, 0.13) 37px, rgba(34, 34, 34, 0.13) 37px, rgba(34, 34, 34, 0.13) 50px, rgba(169, 169, 169, 0.13) 50px, rgba(169, 169, 169, 0.13) 84px, rgba(118, 118, 118, 0.13) 84px, rgba(118, 118, 118, 0.13) 110px, rgba(133, 133, 133, 0.13) 110px, rgba(133, 133, 133, 0.13) 140px, rgba(12, 12, 12, 0.13) 140px, rgba(12, 12, 12, 0.13) 159px), repeating-linear-gradient(45deg, rgba(134, 134, 134, 0.13) 0px, rgba(134, 134, 134, 0.13) 17px, rgba(172, 172, 172, 0.13) 17px, rgba(172, 172, 172, 0.13) 29px, rgba(108, 108, 108, 0.13) 29px, rgba(108, 108, 108, 0.13) 67px, rgba(170, 170, 170, 0.13) 67px, rgba(170, 170, 170, 0.13) 85px, rgba(135, 135, 135, 0.13) 85px, rgba(135, 135, 135, 0.13) 122px, rgba(80, 80, 80, 0.13) 122px, rgba(80, 80, 80, 0.13) 168px, rgba(24, 24, 24, 0.13) 168px, rgba(24, 24, 24, 0.13) 203px), repeating-linear-gradient(45deg, rgba(251, 251, 251, 0.1) 0px, rgba(251, 251, 251, 0.1) 99px, rgba(17, 17, 17, 0.1) 99px, rgba(17, 17, 17, 0.1) 158px, rgba(39, 39, 39, 0.1) 158px, rgba(39, 39, 39, 0.1) 259px, rgba(4, 4, 4, 0.1) 259px, rgba(4, 4, 4, 0.1) 394px, rgba(36, 36, 36, 0.1) 394px, rgba(36, 36, 36, 0.1) 514px, rgba(251, 251, 251, 0.1) 514px, rgba(251, 251, 251, 0.1) 622px, rgba(76, 76, 76, 0.1) 622px, rgba(76, 76, 76, 0.1) 737px), linear-gradient(90deg, #3b3130, #152c2b);
+}
+
+.portfolio .projectOne .quiz {
+  margin-top: 20%;
+  margin-left: 10%;
+  height: 600px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .projectOne .quiz .quizPic {
+  width: 400px;
+}
+
+.portfolio .projectOne .quiz p,
+.portfolio .projectOne .quiz ul {
+  margin-top: 50px;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio .projectOne .quiz li {
+  padding: 10px;
+}
+
+.portfolio .projectOne .quiz a {
+  text-decoration: none;
+  color: #57c95f;
+}
+
+.portfolio .projecTwo .yatzy {
+  margin-top: 20%;
+  margin-left: 10%;
+  height: 600px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .projecTwo .yatzy .yatzyPic {
+  width: 400px;
+}
+
+.portfolio .projecTwo .yatzy p,
+.portfolio .projecTwo .yatzy ul {
+  margin-top: 50px;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio .projecTwo .yatzy li {
+  padding: 10px;
+}
+
+.portfolio .projecTwo .yatzy a {
+  text-decoration: none;
+  color: #57c95f;
+}
+
+.portfolio .projecThree .event {
+  margin-top: 20%;
+  margin-left: 10%;
+  height: 600px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .projecThree .event .eventPic {
+  width: 400px;
+  height: 235px;
+}
+
+.portfolio .projecThree .event p,
+.portfolio .projecThree .event ul {
+  margin-top: 50px;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio .projecThree .event li {
+  padding: 10px;
+}
+
+.portfolio .projecThree .event a {
+  text-decoration: none;
+  color: #57c95f;
 }
 /*# sourceMappingURL=style.css.map */

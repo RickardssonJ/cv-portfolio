@@ -202,7 +202,6 @@ body {
         -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
         box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
         font-family: $roboto;
-        //opacity: 0.4;
         background: rgba(47, 89, 130, 0.346)
     }
 
@@ -230,6 +229,108 @@ body {
 //Portfolio
 
 .portfolio {
-    height: 100vh;
-    color: #d6e8ee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 95vh;
+    color: #ffffff;
+    background-image: repeating-linear-gradient(45deg, rgba(136, 136, 136, 0.13) 0px, rgba(136, 136, 136, 0.13) 27px, rgba(192, 192, 192, 0.13) 27px, rgba(192, 192, 192, 0.13) 37px, rgba(34, 34, 34, 0.13) 37px, rgba(34, 34, 34, 0.13) 50px, rgba(169, 169, 169, 0.13) 50px, rgba(169, 169, 169, 0.13) 84px, rgba(118, 118, 118, 0.13) 84px, rgba(118, 118, 118, 0.13) 110px, rgba(133, 133, 133, 0.13) 110px, rgba(133, 133, 133, 0.13) 140px, rgba(12, 12, 12, 0.13) 140px, rgba(12, 12, 12, 0.13) 159px), repeating-linear-gradient(45deg, rgba(134, 134, 134, 0.13) 0px, rgba(134, 134, 134, 0.13) 17px, rgba(172, 172, 172, 0.13) 17px, rgba(172, 172, 172, 0.13) 29px, rgba(108, 108, 108, 0.13) 29px, rgba(108, 108, 108, 0.13) 67px, rgba(170, 170, 170, 0.13) 67px, rgba(170, 170, 170, 0.13) 85px, rgba(135, 135, 135, 0.13) 85px, rgba(135, 135, 135, 0.13) 122px, rgba(80, 80, 80, 0.13) 122px, rgba(80, 80, 80, 0.13) 168px, rgba(24, 24, 24, 0.13) 168px, rgba(24, 24, 24, 0.13) 203px), repeating-linear-gradient(45deg, rgba(251, 251, 251, 0.1) 0px, rgba(251, 251, 251, 0.1) 99px, rgba(17, 17, 17, 0.1) 99px, rgba(17, 17, 17, 0.1) 158px, rgba(39, 39, 39, 0.1) 158px, rgba(39, 39, 39, 0.1) 259px, rgba(4, 4, 4, 0.1) 259px, rgba(4, 4, 4, 0.1) 394px, rgba(36, 36, 36, 0.1) 394px, rgba(36, 36, 36, 0.1) 514px, rgba(251, 251, 251, 0.1) 514px, rgba(251, 251, 251, 0.1) 622px, rgba(76, 76, 76, 0.1) 622px, rgba(76, 76, 76, 0.1) 737px), linear-gradient(90deg, rgb(59, 49, 48), rgb(21, 44, 43));
+
+    .projectOne {
+
+        .quiz {
+            margin-top: 20%;
+            margin-left: 10%;
+            height: 600px;
+            width: 400px;
+            background: rgba(0, 0, 0, 0.500);
+
+            .quizPic {
+                width: 400px;
+            }
+
+            p,
+            ul {
+                margin-top: 50px;
+                margin-left: 40px;
+                font-size: 1.5rem;
+                font-family: $roboto;
+            }
+
+            li {
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(87, 201, 95);
+            }
+        }
+    }
+
+    .projecTwo {
+
+        .yatzy {
+            margin-top: 20%;
+            margin-left: 10%;
+            height: 600px;
+            width: 400px;
+            background: rgba(0, 0, 0, 0.500);
+
+            .yatzyPic {
+                width: 400px;
+            }
+
+            p,
+            ul {
+                margin-top: 50px;
+                margin-left: 40px;
+                font-size: 1.5rem;
+                font-family: $roboto;
+            }
+
+            li {
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(87, 201, 95);
+            }
+        }
+    }
+
+    .projecThree {
+
+        .event {
+            margin-top: 20%;
+            margin-left: 10%;
+            height: 600px;
+            width: 400px;
+            background: rgba(0, 0, 0, 0.500);
+
+            .eventPic {
+                width: 400px;
+                height: 235px;
+            }
+
+            p,
+            ul {
+                margin-top: 50px;
+                margin-left: 40px;
+                font-size: 1.5rem;
+                font-family: $roboto;
+            }
+
+            li {
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgb(87, 201, 95);
+            }
+        }
+    }
+
+
 }
