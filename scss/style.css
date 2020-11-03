@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,6 +20,7 @@ body {
 }
 
 .navHeader {
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,13 +131,13 @@ body {
           transform: translateY(-30%);
 }
 
-.aboutMe {
+.aboutMeDiv {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 550px 1fr;
-      grid-template-columns: 550px 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   height: 100vh;
-  background-image: url("/pictures/pexels-mitchell-luo-5720108.jpg");
+  background-image: url("/pictures/pexels-martin-péchy-2078266.jpg");
   background-size: cover;
   /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
   -webkit-background-size: cover;
@@ -153,33 +155,34 @@ body {
   background-attachment: fixed;
 }
 
-.aboutMe .aboutMePic {
-  margin-top: 200px;
-  margin-left: 50px;
-}
-
-.aboutMe .meColor {
-  display: block;
-  max-width: 100%;
-}
-
-.aboutMe .aboutMeText {
+.aboutMeDiv .aboutMeText {
+  position: relative;
   overflow: auto;
   width: 60%;
-  margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 300px;
+  margin-left: 300px;
   height: 500px;
-  padding: 30px;
   background-color: black;
   -webkit-box-shadow: 8px 8px 30px 0px black;
   box-shadow: 8px 8px 30px 0px black;
   font-family: "Roboto", sans-serif;
+  background: rgba(47, 89, 130, 0.346);
 }
 
-.aboutMe p {
-  position: relative;
+.aboutMeDiv .meColor {
+  margin-left: 500px;
+  margin-top: 10px;
+  height: 400px;
+  max-width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.aboutMeDiv p {
   font-size: 1.5vw;
-  margin-top: 25px;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-right: 40px;
   color: white;
 }
 
