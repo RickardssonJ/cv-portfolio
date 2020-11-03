@@ -1,0 +1,229 @@
+$orangeColor:rgb(240, 165, 90);
+$roboto: 'Roboto',
+sans-serif;
+
+@mixin backGroundPicture {
+    background-size: cover;
+    /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+    -moz-background-size: cover;
+    /* optional for Firefox 3.6 */
+    -o-background-size: cover;
+    /* for Opera 9.5 */
+    margin: 0;
+    /* to remove the default white margin of body */
+    padding: 0;
+    /* to remove the default white margin of body */
+    overflow: hidden;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(2, 2, 2);
+}
+
+// hr {
+//     color: white;
+//     border: 2px solid;
+// }
+
+//centralize all the content if the screen size gets bigger then 2200px
+.wrapper {
+    max-width: 2200px;
+    margin: 0 auto;
+}
+
+//Nav
+// .headDiv {
+//     background-color: #232222;
+//     height: 50px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 30px 10%;
+//     z-index: 99;
+//     position: fixed;
+//     top: 0;
+//     height: 50px;
+//     width: 100%;
+//     font-size: 1.2rem;
+//     line-height: 50px;
+
+//     //.nav {}
+
+
+//     a {
+//         margin-left: 30px;
+//         font-family: $roboto;
+//         text-decoration: none;
+//         color: rgb(255, 255, 255);
+//     }
+
+//     a:hover {
+//         color: rgb(41, 245, 10);
+
+//     }
+
+//     p {
+//         color: rgb(243, 237, 237);
+//         font-family: $roboto;
+//         justify-content: center;
+
+//         // margin-right: 30px;
+//     }
+
+// }
+
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 40px;
+    background-color: #24252a;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    font-size: 1.2rem;
+
+    .navLinks {
+        list-style: none;
+        display: flex;
+    }
+
+    .navLinks a,
+    p {
+        font-family: $roboto;
+        color: white;
+        text-decoration: none;
+    }
+
+    .navLinks li {
+        padding: 0px 20px;
+    }
+
+    .navLinks li a {
+        transition: color 0.3s ease 0s;
+    }
+
+    .navLinks li a:hover {
+        color: rgb(41, 245, 10);
+    }
+}
+
+
+
+
+.landingPage {
+    background-image: url("/pictures/pexels-artem-beliaikin-853199.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include backGroundPicture;
+    justify-items: center; // Centrerade bilden
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
+
+    span {
+        color: rgb(41, 245, 10); //rgb(41, 245, 10)
+    }
+
+    p {
+        margin: 0 auto;
+        text-shadow: rgb(0, 0, 0) 1px 0 20px;
+        font-weight: bold;
+        font-size: 1.7rem;
+
+        color: rgb(255, 255, 255);
+    }
+
+    .landingText {
+        position: relative;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        margin-top: 45%;
+        margin-left: 50px;
+        color: white;
+    }
+
+    .landingPic {
+        color: white;
+        height: 100vh;
+
+        #me {
+            z-index: 1;
+            height: 400px;
+            position: relative;
+            top: 45%;
+            transform: translateY(-30%);
+        }
+    }
+}
+
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    height: 100vh;
+    background-image: url("/pictures/pexels-mitchell-luo-5720108.jpg");
+    @include backGroundPicture();
+
+
+
+    .aboutMePic {
+        margin-top: 200px;
+        margin-left: 50px;
+        //background-color: #000000;
+        // border-right: 4px solid rgb(251, 251, 251);
+    }
+
+    .meColor {
+        display: block;
+        max-width: 100%;
+    }
+
+    //SJälva diven
+    .aboutMeText {
+        overflow: auto; //Gör så att texten inte flyter utanför text rutan
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 150px;
+        height: 500px;
+        padding: 30px;
+        background-color: rgb(0, 0, 0);
+        -webkit-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+        box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
+        font-family: $roboto;
+    }
+
+    p {
+        position: relative;
+        font-size: 1.5vw;
+        margin-top: 25px;
+        color: white;
+    }
+
+}
+
+//Portfolio
+
+.portfolio {
+    height: 100vh;
+    color: #d6e8ee;
+}
