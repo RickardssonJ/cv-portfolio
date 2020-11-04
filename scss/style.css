@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -32,7 +31,7 @@ body {
           align-items: center;
   padding-left: 30px;
   padding-right: 40px;
-  background-color: #24252a;
+  background-color: rgba(0, 0, 0, 0);
   position: fixed;
   width: 100%;
   top: 0;
@@ -64,11 +63,15 @@ body {
 }
 
 .navHeader .navLinks li a:hover {
-  color: #29f50a;
+  color: #ff8103;
+}
+
+.navHeader .name {
+  color: #ff8103;
 }
 
 .landingPage {
-  background-image: url("/pictures/pexels-artem-beliaikin-853199.jpg");
+  background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, black, black);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -97,7 +100,7 @@ body {
 }
 
 .landingPage span {
-  color: #29f50a;
+  color: #ff8103;
 }
 
 .landingPage p {
@@ -112,7 +115,7 @@ body {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
-  margin-top: 45%;
+  margin-top: 30%;
   margin-left: 50px;
   color: white;
 }
@@ -137,7 +140,7 @@ body {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   height: 100vh;
-  background-image: url("/pictures/pexels-martin-péchy-2078266.jpg");
+  background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, #ff7706, #ff7706);
   background-size: cover;
 }
 
@@ -179,8 +182,7 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   height: 95vh;
   color: #ffffff;
-  background-image: repeating-linear-gradient(45deg, rgba(136, 136, 136, 0.13) 0px, rgba(136, 136, 136, 0.13) 27px, rgba(192, 192, 192, 0.13) 27px, rgba(192, 192, 192, 0.13) 37px, rgba(34, 34, 34, 0.13) 37px, rgba(34, 34, 34, 0.13) 50px, rgba(169, 169, 169, 0.13) 50px, rgba(169, 169, 169, 0.13) 84px, rgba(118, 118, 118, 0.13) 84px, rgba(118, 118, 118, 0.13) 110px, rgba(133, 133, 133, 0.13) 110px, rgba(133, 133, 133, 0.13) 140px, rgba(12, 12, 12, 0.13) 140px, rgba(12, 12, 12, 0.13) 159px), repeating-linear-gradient(45deg, rgba(134, 134, 134, 0.13) 0px, rgba(134, 134, 134, 0.13) 17px, rgba(172, 172, 172, 0.13) 17px, rgba(172, 172, 172, 0.13) 29px, rgba(108, 108, 108, 0.13) 29px, rgba(108, 108, 108, 0.13) 67px, rgba(170, 170, 170, 0.13) 67px, rgba(170, 170, 170, 0.13) 85px, rgba(135, 135, 135, 0.13) 85px, rgba(135, 135, 135, 0.13) 122px, rgba(80, 80, 80, 0.13) 122px, rgba(80, 80, 80, 0.13) 168px, rgba(24, 24, 24, 0.13) 168px, rgba(24, 24, 24, 0.13) 203px), repeating-linear-gradient(45deg, rgba(251, 251, 251, 0.1) 0px, rgba(251, 251, 251, 0.1) 99px, rgba(17, 17, 17, 0.1) 99px, rgba(17, 17, 17, 0.1) 158px, rgba(39, 39, 39, 0.1) 158px, rgba(39, 39, 39, 0.1) 259px, rgba(4, 4, 4, 0.1) 259px, rgba(4, 4, 4, 0.1) 394px, rgba(36, 36, 36, 0.1) 394px, rgba(36, 36, 36, 0.1) 514px, rgba(251, 251, 251, 0.1) 514px, rgba(251, 251, 251, 0.1) 622px, rgba(76, 76, 76, 0.1) 622px, rgba(76, 76, 76, 0.1) 737px), -webkit-gradient(linear, left top, right top, from(#3b3130), to(#152c2b));
-  background-image: repeating-linear-gradient(45deg, rgba(136, 136, 136, 0.13) 0px, rgba(136, 136, 136, 0.13) 27px, rgba(192, 192, 192, 0.13) 27px, rgba(192, 192, 192, 0.13) 37px, rgba(34, 34, 34, 0.13) 37px, rgba(34, 34, 34, 0.13) 50px, rgba(169, 169, 169, 0.13) 50px, rgba(169, 169, 169, 0.13) 84px, rgba(118, 118, 118, 0.13) 84px, rgba(118, 118, 118, 0.13) 110px, rgba(133, 133, 133, 0.13) 110px, rgba(133, 133, 133, 0.13) 140px, rgba(12, 12, 12, 0.13) 140px, rgba(12, 12, 12, 0.13) 159px), repeating-linear-gradient(45deg, rgba(134, 134, 134, 0.13) 0px, rgba(134, 134, 134, 0.13) 17px, rgba(172, 172, 172, 0.13) 17px, rgba(172, 172, 172, 0.13) 29px, rgba(108, 108, 108, 0.13) 29px, rgba(108, 108, 108, 0.13) 67px, rgba(170, 170, 170, 0.13) 67px, rgba(170, 170, 170, 0.13) 85px, rgba(135, 135, 135, 0.13) 85px, rgba(135, 135, 135, 0.13) 122px, rgba(80, 80, 80, 0.13) 122px, rgba(80, 80, 80, 0.13) 168px, rgba(24, 24, 24, 0.13) 168px, rgba(24, 24, 24, 0.13) 203px), repeating-linear-gradient(45deg, rgba(251, 251, 251, 0.1) 0px, rgba(251, 251, 251, 0.1) 99px, rgba(17, 17, 17, 0.1) 99px, rgba(17, 17, 17, 0.1) 158px, rgba(39, 39, 39, 0.1) 158px, rgba(39, 39, 39, 0.1) 259px, rgba(4, 4, 4, 0.1) 259px, rgba(4, 4, 4, 0.1) 394px, rgba(36, 36, 36, 0.1) 394px, rgba(36, 36, 36, 0.1) 514px, rgba(251, 251, 251, 0.1) 514px, rgba(251, 251, 251, 0.1) 622px, rgba(76, 76, 76, 0.1) 622px, rgba(76, 76, 76, 0.1) 737px), linear-gradient(90deg, #3b3130, #152c2b);
+  background-image: linear-gradient(12deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(254, 139, 8, 0.12) 27%, rgba(254, 139, 8, 0.12) 66%, rgba(83, 83, 83, 0.17) 66%, rgba(83, 83, 83, 0.17) 100%), linear-gradient(321deg, rgba(254, 118, 6, 0.24) 0%, rgba(254, 118, 6, 0.24) 13%, rgba(231, 231, 231, 0.26) 13%, rgba(231, 231, 231, 0.26) 34%, rgba(248, 133, 8, 0.17) 34%, rgba(248, 133, 8, 0.17) 71%, rgba(112, 112, 112, 0) 71%, rgba(112, 112, 112, 0) 100%), linear-gradient(236deg, rgba(189, 189, 189, 0.03) 0%, rgba(189, 189, 189, 0.03) 47%, rgba(174, 98, 39, 0.32) 47%, rgba(174, 98, 39, 0.32) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(16, 15, 15, 0.28) 85%, rgba(16, 15, 15, 0.28) 100%), linear-gradient(96deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(8, 8, 8, 0.05) 98%, rgba(8, 8, 8, 0.05) 100%), linear-gradient(334deg, #050505, #050505);
 }
 
 .portfolio .projectOne .quiz {
@@ -209,7 +211,7 @@ body {
 
 .portfolio .projectOne .quiz a {
   text-decoration: none;
-  color: #57c95f;
+  color: #ffa64e;
 }
 
 .portfolio .projecTwo .yatzy {
@@ -238,7 +240,7 @@ body {
 
 .portfolio .projecTwo .yatzy a {
   text-decoration: none;
-  color: #57c95f;
+  color: #ffa64e;
 }
 
 .portfolio .projecThree .event {
@@ -268,7 +270,7 @@ body {
 
 .portfolio .projecThree .event a {
   text-decoration: none;
-  color: #57c95f;
+  color: #ffa64e;
 }
 
 .contactDiv {
@@ -298,7 +300,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-decoration: underline;
   margin: 30px;
-  color: white;
+  color: #ffa64e;
   font-size: 2.3rem;
 }
 
@@ -313,5 +315,31 @@ body {
 
 .contactDiv .contactInfo li {
   padding: 10px;
+}
+
+.contactDiv .contactInfo a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactDiv .contactInfo a:hover {
+  color: #ffa64e;
+}
+
+.contactDiv .contactInfo .logos {
+  height: 50px;
+  margin-top: 140px;
+  margin-left: 480px;
+}
+
+.contactDiv .contactInfo .logos #facebook,
+.contactDiv .contactInfo .logos #linktedIn,
+.contactDiv .contactInfo .logos #gitHub {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.contactDiv .contactInfo .logos #mail {
+  height: 55px;
 }
 /*# sourceMappingURL=style.css.map */
