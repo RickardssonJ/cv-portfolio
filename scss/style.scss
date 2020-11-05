@@ -1,4 +1,4 @@
-$orangeColor:rgb(240, 165, 90);
+$orangeColor:rgb(255, 129, 3);
 $roboto: 'Roboto',
 sans-serif;
 
@@ -121,11 +121,11 @@ body {
     }
 
     .navLinks li a:hover {
-        color: rgb(255, 129, 3);
+        color: $orangeColor;
     }
 
     .name {
-        color: rgb(255, 129, 3);
+        color: $orangeColor;
     }
 }
 
@@ -140,7 +140,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @include backGroundPicture;
+    //@include backGroundPicture;
     justify-items: center; // Centrerade bilden
 
     h1 {
@@ -150,7 +150,7 @@ body {
 
     span {
         //color: rgb(41, 245, 10); //rgb(41, 245, 10)
-        color: rgb(255, 129, 3);
+        color: $orangeColor;
     }
 
     p {
@@ -194,7 +194,7 @@ body {
     height: 100vh;
     //background-image: url("/pictures/pexels-martin-péchy-2078266.jpg");
     background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, rgb(255, 119, 6), rgb(255, 119, 6));
-    ;
+
     background-size: cover;
     //@include backGroundPicture();
 
@@ -206,7 +206,7 @@ body {
         margin-top: 270px;
         margin-left: 300px;
         height: 500px;
-        background-color: rgb(0, 0, 0);
+        //background-color: rgb(0, 0, 0);
         -webkit-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
         -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
         box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
@@ -226,7 +226,7 @@ body {
 
 
     p {
-        font-size: 1.5vw;
+        font-size: 1.4rem;
         margin-top: 150px;
         margin-left: 40px;
         margin-right: 40px;
@@ -236,6 +236,13 @@ body {
 }
 
 //Portfolio
+@mixin project {
+    margin-top: 20%;
+    margin-left: 15%;
+    height: 600px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.500);
+}
 
 .portfolio {
     display: grid;
@@ -248,12 +255,7 @@ body {
     .projectOne {
 
         .quiz {
-            margin-top: 20%;
-            margin-left: 15%;
-            height: 600px;
-            width: 400px;
-            background: rgba(0, 0, 0, 0.500);
-
+            @include project;
 
             .quizPic {
                 width: 400px;
@@ -274,7 +276,7 @@ body {
             a {
                 text-decoration: none;
                 //color: rgb(87, 201, 95);
-                color: rgb(255, 166, 78);
+                color: $orangeColor;
             }
         }
     }
@@ -282,11 +284,8 @@ body {
     .projecTwo {
 
         .yatzy {
-            margin-top: 20%;
-            margin-left: 15%;
-            height: 600px;
-            width: 400px;
-            background: rgba(0, 0, 0, 0.500);
+            @include project;
+
 
             .yatzyPic {
                 width: 400px;
@@ -307,7 +306,7 @@ body {
             a {
                 text-decoration: none;
                 // color: rgb(87, 201, 95);
-                color: rgb(255, 166, 78);
+                color: $orangeColor;
 
             }
         }
@@ -316,11 +315,7 @@ body {
     .projecThree {
 
         .event {
-            margin-top: 20%;
-            margin-left: 15%;
-            height: 600px;
-            width: 400px;
-            background: rgba(0, 0, 0, 0.500);
+            @include project;
 
             .eventPic {
                 width: 400px;
@@ -342,12 +337,14 @@ body {
             a {
                 text-decoration: none;
                 // color: rgb(87, 201, 95);
-                color: rgb(255, 166, 78);
+                color: $orangeColor;
 
             }
         }
     }
 }
+
+
 
 .contactDiv {
     display: grid;
@@ -371,7 +368,7 @@ body {
             text-decoration: underline;
             margin: 30px;
             //color: white;
-            color: rgb(255, 166, 78);
+            color: $orangeColor;
             font-size: 2.3rem;
         }
 
@@ -395,7 +392,7 @@ body {
         }
 
         a:hover {
-            color: rgb(255, 166, 78);
+            color: $orangeColor;
         }
 
         .logos {
@@ -416,6 +413,39 @@ body {
         }
 
 
+
+    }
+}
+
+.educationDiv {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 25% auto 25%;
+    height: 100vh;
+
+    .educationInfo {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        height: auto;
+        width: auto;
+        background-color: rgba(147, 149, 147, 0.367);
+        -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+        box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+    }
+
+    h1 {
+        text-align: center;
+        color: $orangeColor;
+        font-family: $roboto;
+        margin-top: 30px;
+    }
+
+    p {
+        color: white;
+        font-family: $roboto;
+        font-size: 1.2rem;
+        margin-top: 40px;
+        padding: 0 20px;
 
     }
 }

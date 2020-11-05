@@ -76,21 +76,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  background-size: cover;
-  /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
-  -webkit-background-size: cover;
-  /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
-  -moz-background-size: cover;
-  /* optional for Firefox 3.6 */
-  -o-background-size: cover;
-  /* for Opera 9.5 */
-  margin: 0;
-  /* to remove the default white margin of body */
-  padding: 0;
-  /* to remove the default white margin of body */
-  overflow: hidden;
-  background-position: center center;
-  background-attachment: fixed;
   justify-items: center;
 }
 
@@ -151,7 +136,6 @@ body {
   margin-top: 270px;
   margin-left: 300px;
   height: 500px;
-  background-color: black;
   -webkit-box-shadow: 8px 8px 30px 0px black;
   box-shadow: 8px 8px 30px 0px black;
   font-family: "Roboto", sans-serif;
@@ -168,7 +152,7 @@ body {
 }
 
 .aboutMeDiv p {
-  font-size: 1.5vw;
+  font-size: 1.4rem;
   margin-top: 150px;
   margin-left: 40px;
   margin-right: 40px;
@@ -211,7 +195,7 @@ body {
 
 .portfolio .projectOne .quiz a {
   text-decoration: none;
-  color: #ffa64e;
+  color: #ff8103;
 }
 
 .portfolio .projecTwo .yatzy {
@@ -240,7 +224,7 @@ body {
 
 .portfolio .projecTwo .yatzy a {
   text-decoration: none;
-  color: #ffa64e;
+  color: #ff8103;
 }
 
 .portfolio .projecThree .event {
@@ -270,7 +254,7 @@ body {
 
 .portfolio .projecThree .event a {
   text-decoration: none;
-  color: #ffa64e;
+  color: #ff8103;
 }
 
 .contactDiv {
@@ -300,7 +284,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-decoration: underline;
   margin: 30px;
-  color: #ffa64e;
+  color: #ff8103;
   font-size: 2.3rem;
 }
 
@@ -323,7 +307,7 @@ body {
 }
 
 .contactDiv .contactInfo a:hover {
-  color: #ffa64e;
+  color: #ff8103;
 }
 
 .contactDiv .contactInfo .logos {
@@ -341,5 +325,42 @@ body {
 
 .contactDiv .contactInfo .logos #mail {
   height: 55px;
+}
+
+.educationDiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% auto 25%;
+      grid-template-columns: 25% auto 25%;
+  -ms-grid-rows: 25% auto 25%;
+      grid-template-rows: 25% auto 25%;
+  height: 100vh;
+}
+
+.educationDiv .educationInfo {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  height: auto;
+  width: auto;
+  background-color: rgba(147, 149, 147, 0.367);
+  -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+  box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+}
+
+.educationDiv h1 {
+  text-align: center;
+  color: #ff8103;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+
+.educationDiv p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 /*# sourceMappingURL=style.css.map */
