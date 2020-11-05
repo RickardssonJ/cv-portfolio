@@ -5,12 +5,16 @@
   padding: 0;
 }
 
+.navMobileLinks {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
+  background-color: #333333;
 }
 
 .wrapper {
@@ -164,7 +168,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  height: 95vh;
+  height: 100vh;
   color: #ffffff;
   background-image: linear-gradient(12deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(254, 139, 8, 0.12) 27%, rgba(254, 139, 8, 0.12) 66%, rgba(83, 83, 83, 0.17) 66%, rgba(83, 83, 83, 0.17) 100%), linear-gradient(321deg, rgba(254, 118, 6, 0.24) 0%, rgba(254, 118, 6, 0.24) 13%, rgba(231, 231, 231, 0.26) 13%, rgba(231, 231, 231, 0.26) 34%, rgba(248, 133, 8, 0.17) 34%, rgba(248, 133, 8, 0.17) 71%, rgba(112, 112, 112, 0) 71%, rgba(112, 112, 112, 0) 100%), linear-gradient(236deg, rgba(189, 189, 189, 0.03) 0%, rgba(189, 189, 189, 0.03) 47%, rgba(174, 98, 39, 0.32) 47%, rgba(174, 98, 39, 0.32) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(16, 15, 15, 0.28) 85%, rgba(16, 15, 15, 0.28) 100%), linear-gradient(96deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(8, 8, 8, 0.05) 98%, rgba(8, 8, 8, 0.05) 100%), linear-gradient(334deg, #050505, #050505);
 }
@@ -273,8 +277,8 @@ body {
       grid-column-start: 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
-  height: auto;
-  width: auto;
+  height: 430px;
+  width: 750px;
   background-color: rgba(147, 149, 147, 0.367);
   -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
   box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
@@ -282,7 +286,6 @@ body {
 
 .contactDiv .contactInfo h1 {
   font-family: "Roboto", sans-serif;
-  text-decoration: underline;
   margin: 30px;
   color: #ff8103;
   font-size: 2.3rem;
@@ -330,10 +333,10 @@ body {
 .educationDiv {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% auto 25%;
-      grid-template-columns: 25% auto 25%;
-  -ms-grid-rows: 25% auto 25%;
-      grid-template-rows: 25% auto 25%;
+  -ms-grid-columns: 25% 1fr 25%;
+      grid-template-columns: 25% 1fr 25%;
+  -ms-grid-rows: 25% 1fr 25%;
+      grid-template-rows: 25% 1fr 25%;
   height: 100vh;
 }
 
@@ -342,8 +345,8 @@ body {
       grid-column-start: 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
-  height: auto;
-  width: auto;
+  height: 430px;
+  width: 750px;
   background-color: rgba(147, 149, 147, 0.367);
   -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
   box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
@@ -359,8 +362,108 @@ body {
 .educationDiv p {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-top: 40px;
   padding: 0 20px;
+}
+
+@media screen and (max-width: 694px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .navHeader {
+    display: none;
+  }
+  .navMobileLinks {
+    display: inline;
+  }
+  .navMobileLinks #navMobile {
+    z-index: 1;
+    position: absolute;
+    background-color: black;
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 300px;
+  }
+  .navMobileLinks #hamburger {
+    position: fixed;
+    cursor: pointer;
+    left: 25%;
+    top: 0.5%;
+    z-index: 2;
+  }
+  .navMobileLinks .line {
+    width: 30px;
+    height: 3px;
+    background: #ff8103;
+    margin: 5px;
+  }
+  .navMobileLinks #navMobile a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+  .navMobileLinks #navMobile a:hover {
+    color: orange;
+  }
+  .navMobileLinks #navMobile.active {
+    position: fixed;
+    left: 0px;
+  }
+  .landingPage {
+    background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, black, black);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .landingPage h1 {
+    margin-top: 90px;
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+  .landingPage span {
+    color: #ff8103;
+  }
+  .landingPage p {
+    margin: 0 auto;
+    text-shadow: black 1px 0 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .landingPage .landingText {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 30%;
+    margin-left: 50px;
+    color: white;
+  }
+  .landingPage .landingPic {
+    color: white;
+    height: 100vh;
+  }
+  .landingPage .landingPic #me {
+    z-index: 1;
+    height: 400px;
+    position: relative;
+    top: 45%;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
