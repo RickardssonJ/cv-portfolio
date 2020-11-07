@@ -1,15 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger")
-  //const navMobile = document.getElementById("navMobile")
   const navMobile = document.querySelector(".navMobile")
 
+  //When cklicing om the the hamburger div the nav bar will unhide and hide
+  //When cklicing om the the hamburger div the nav bar will unhide and hide
   hamburger.addEventListener("click", () => {
-    //document.getElementById("navMobile").classList.toggle("active")
     document.querySelector(".navMobile").classList.toggle("active")
   })
 
+  //When cklicing om the the navMobile div the nav bar will unhide and hide
   navMobile.addEventListener("click", () => {
-    // document.getElementById("navMobile").classList.toggle("active")
     document.querySelector(".navMobile").classList.toggle("active")
   })
+
+  // When the user scrolls down, the function will hide the nav bar and when the user scrolls up the function will show the navbar
+
+  let startScrollpos = window.pageYOffset
+
+  window.onscroll = () => {
+    let currentScrollPos = window.pageYOffset
+    if (startScrollpos > currentScrollPos) {
+      document.getElementById("navBar").style.top = "0"
+    } else {
+      document.getElementById("navBar").style.top = "-50px"
+    }
+    startScrollpos = currentScrollPos
+  }
 })

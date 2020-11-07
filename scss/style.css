@@ -19,7 +19,7 @@
     margin: 0 auto;
   }
   .navHeader {
-    z-index: 2;
+    z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -37,6 +37,8 @@
     top: 0;
     height: 50px;
     font-size: 1.2rem;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
   }
   .navHeader .navLinks {
     list-style: none;
@@ -87,28 +89,16 @@
     color: white;
   }
   .landingPage .landingText {
-    position: relative;
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     margin-top: 30%;
     margin-left: 50px;
     color: white;
   }
-  .landingPage .landingPic {
-    color: white;
-    height: 100vh;
-  }
-  .landingPage .landingPic #me {
-    z-index: 1;
-    height: 400px;
-    position: relative;
-    top: 45%;
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
-  }
   .aboutMeDiv {
     display: -ms-grid;
     display: grid;
+    position: relative;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     height: 100vh;
@@ -116,11 +106,12 @@
     background-size: cover;
   }
   .aboutMeDiv .aboutMeText {
-    position: relative;
+    position: absolute;
     overflow: auto;
-    width: 60%;
+    max-width: 60%;
     margin-top: 270px;
     margin-left: 300px;
+    margin-right: auto;
     height: 500px;
     -webkit-box-shadow: 8px 8px 30px 0px black;
     box-shadow: 8px 8px 30px 0px black;
@@ -128,11 +119,10 @@
     background: rgba(47, 89, 130, 0.346);
   }
   .aboutMeDiv .meColor {
-    margin-left: 480px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
     height: 400px;
-    max-width: 100%;
-    position: absolute;
     z-index: 2;
   }
   .aboutMeDiv p {
@@ -290,6 +280,7 @@
         grid-template-columns: 25% 1fr 25%;
     -ms-grid-rows: 25% 1fr 25%;
         grid-template-rows: 25% 1fr 25%;
+    background-image: linear-gradient(12deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(254, 139, 8, 0.12) 27%, rgba(254, 139, 8, 0.12) 66%, rgba(83, 83, 83, 0.17) 66%, rgba(83, 83, 83, 0.17) 100%), linear-gradient(321deg, rgba(254, 118, 6, 0.24) 0%, rgba(254, 118, 6, 0.24) 13%, rgba(231, 231, 231, 0.26) 13%, rgba(231, 231, 231, 0.26) 34%, rgba(248, 133, 8, 0.17) 34%, rgba(248, 133, 8, 0.17) 71%, rgba(112, 112, 112, 0) 71%, rgba(112, 112, 112, 0) 100%), linear-gradient(236deg, rgba(189, 189, 189, 0.03) 0%, rgba(189, 189, 189, 0.03) 47%, rgba(174, 98, 39, 0.32) 47%, rgba(174, 98, 39, 0.32) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(16, 15, 15, 0.28) 85%, rgba(16, 15, 15, 0.28) 100%), linear-gradient(96deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(8, 8, 8, 0.05) 98%, rgba(8, 8, 8, 0.05) 100%), linear-gradient(334deg, #050505, #050505);
     height: 100vh;
   }
   .educationDiv .educationInfo {
@@ -299,7 +290,7 @@
         grid-row-start: 2;
     height: 430px;
     width: 750px;
-    background-color: rgba(147, 149, 147, 0.367);
+    background-color: rgba(147, 149, 147, 0.689);
     -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
     box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
   }
@@ -318,15 +309,12 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 900px) {
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  .wrapper {
-    max-width: 375px;
   }
   html {
     scroll-behavior: smooth;
@@ -406,18 +394,6 @@
     margin-top: 30%;
     margin-left: 50px;
     color: white;
-  }
-  .landingPage .landingPic {
-    color: white;
-    height: 100vh;
-  }
-  .landingPage .landingPic #me {
-    z-index: 1;
-    height: 400px;
-    position: relative;
-    top: 45%;
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
   }
   .aboutMeDiv {
     display: -ms-grid;
