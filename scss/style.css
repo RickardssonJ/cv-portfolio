@@ -1,378 +1,332 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.navMobileLinks {
-  display: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #333333;
-}
-
-.wrapper {
-  max-width: 1521px;
-  margin: 0 auto;
-}
-
-.navHeader {
-  z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 30px;
-  padding-right: 40px;
-  background-color: rgba(0, 0, 0, 0);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: 50px;
-  font-size: 1.2rem;
-}
-
-.navHeader .navLinks {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navHeader .navLinks a,
-.navHeader p {
-  font-family: "Roboto", sans-serif;
-  color: white;
-  text-decoration: none;
-}
-
-.navHeader .navLinks li {
-  padding: 0px 20px;
-}
-
-.navHeader .navLinks li a {
-  -webkit-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
-}
-
-.navHeader .navLinks li a:hover {
-  color: #ff8103;
-}
-
-.navHeader .name {
-  color: #ff8103;
-}
-
-.landingPage {
-  background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, black, black);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-
-.landingPage h1 {
-  margin-bottom: 20px;
-  font-size: 4rem;
-}
-
-.landingPage span {
-  color: #ff8103;
-}
-
-.landingPage p {
-  margin: 0 auto;
-  text-shadow: black 1px 0 20px;
-  font-weight: bold;
-  font-size: 1.7rem;
-  color: white;
-}
-
-.landingPage .landingText {
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  margin-top: 30%;
-  margin-left: 50px;
-  color: white;
-}
-
-.landingPage .landingPic {
-  color: white;
-  height: 100vh;
-}
-
-.landingPage .landingPic #me {
-  z-index: 1;
-  height: 400px;
-  position: relative;
-  top: 45%;
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
-}
-
-.aboutMeDiv {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  height: 100vh;
-  background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, #ff7706, #ff7706);
-  background-size: cover;
-}
-
-.aboutMeDiv .aboutMeText {
-  position: relative;
-  overflow: auto;
-  width: 60%;
-  margin-top: 270px;
-  margin-left: 300px;
-  height: 500px;
-  -webkit-box-shadow: 8px 8px 30px 0px black;
-  box-shadow: 8px 8px 30px 0px black;
-  font-family: "Roboto", sans-serif;
-  background: rgba(47, 89, 130, 0.346);
-}
-
-.aboutMeDiv .meColor {
-  margin-left: 480px;
-  margin-top: 0px;
-  height: 400px;
-  max-width: 100%;
-  position: absolute;
-  z-index: 2;
-}
-
-.aboutMeDiv p {
-  font-size: 1.4rem;
-  margin-top: 150px;
-  margin-left: 40px;
-  margin-right: 40px;
-  color: white;
-}
-
-.portfolio {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  height: 100vh;
-  color: #ffffff;
-  background-image: linear-gradient(12deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(254, 139, 8, 0.12) 27%, rgba(254, 139, 8, 0.12) 66%, rgba(83, 83, 83, 0.17) 66%, rgba(83, 83, 83, 0.17) 100%), linear-gradient(321deg, rgba(254, 118, 6, 0.24) 0%, rgba(254, 118, 6, 0.24) 13%, rgba(231, 231, 231, 0.26) 13%, rgba(231, 231, 231, 0.26) 34%, rgba(248, 133, 8, 0.17) 34%, rgba(248, 133, 8, 0.17) 71%, rgba(112, 112, 112, 0) 71%, rgba(112, 112, 112, 0) 100%), linear-gradient(236deg, rgba(189, 189, 189, 0.03) 0%, rgba(189, 189, 189, 0.03) 47%, rgba(174, 98, 39, 0.32) 47%, rgba(174, 98, 39, 0.32) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(16, 15, 15, 0.28) 85%, rgba(16, 15, 15, 0.28) 100%), linear-gradient(96deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(8, 8, 8, 0.05) 98%, rgba(8, 8, 8, 0.05) 100%), linear-gradient(334deg, #050505, #050505);
-}
-
-.portfolio .projectOne .quiz {
-  margin-top: 20%;
-  margin-left: 15%;
-  height: 600px;
-  width: 400px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.portfolio .projectOne .quiz .quizPic {
-  width: 400px;
-}
-
-.portfolio .projectOne .quiz p,
-.portfolio .projectOne .quiz ul {
-  margin-top: 50px;
-  margin-left: 40px;
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
-}
-
-.portfolio .projectOne .quiz li {
-  padding: 10px;
-}
-
-.portfolio .projectOne .quiz a {
-  text-decoration: none;
-  color: #ff8103;
-}
-
-.portfolio .projecTwo .yatzy {
-  margin-top: 20%;
-  margin-left: 15%;
-  height: 600px;
-  width: 400px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.portfolio .projecTwo .yatzy .yatzyPic {
-  width: 400px;
-}
-
-.portfolio .projecTwo .yatzy p,
-.portfolio .projecTwo .yatzy ul {
-  margin-top: 50px;
-  margin-left: 40px;
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
-}
-
-.portfolio .projecTwo .yatzy li {
-  padding: 10px;
-}
-
-.portfolio .projecTwo .yatzy a {
-  text-decoration: none;
-  color: #ff8103;
-}
-
-.portfolio .projecThree .event {
-  margin-top: 20%;
-  margin-left: 15%;
-  height: 600px;
-  width: 400px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.portfolio .projecThree .event .eventPic {
-  width: 400px;
-  height: 235px;
-}
-
-.portfolio .projecThree .event p,
-.portfolio .projecThree .event ul {
-  margin-top: 50px;
-  margin-left: 40px;
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
-}
-
-.portfolio .projecThree .event li {
-  padding: 10px;
-}
-
-.portfolio .projecThree .event a {
-  text-decoration: none;
-  color: #ff8103;
-}
-
-.contactDiv {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% auto 25%;
-      grid-template-columns: 25% auto 25%;
-  -ms-grid-rows: 25% auto 25%;
-      grid-template-rows: 25% auto 25%;
-  height: 100vh;
-  background-image: linear-gradient(200deg, rgba(171, 171, 171, 0.13) 0%, rgba(171, 171, 171, 0.13) 23%, rgba(90, 90, 90, 0.21) 23%, rgba(90, 90, 90, 0.21) 48%, rgba(65, 65, 65, 0.18) 48%, rgba(65, 65, 65, 0.18) 61%, rgba(232, 232, 232, 0) 61%, rgba(232, 232, 232, 0) 100%), linear-gradient(126deg, rgba(194, 194, 194, 0) 0%, rgba(194, 194, 194, 0) 11%, rgba(127, 127, 127, 0.07) 11%, rgba(127, 127, 127, 0.07) 33%, rgba(117, 117, 117, 0.19) 33%, rgba(117, 117, 117, 0.19) 99%, rgba(248, 248, 248, 0.05) 99%, rgba(248, 248, 248, 0.05) 100%), linear-gradient(144deg, rgba(64, 64, 64, 0.01) 0%, rgba(64, 64, 64, 0.01) 33%, rgba(211, 211, 211, 0.1) 33%, rgba(211, 211, 211, 0.1) 50%, rgba(53, 53, 53, 0.35) 50%, rgba(53, 53, 53, 0.35) 75%, rgba(144, 144, 144, 0) 75%, rgba(144, 144, 144, 0) 100%), linear-gradient(329deg, black, black);
-}
-
-.contactDiv .contactInfo {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  height: 430px;
-  width: 750px;
-  background-color: rgba(147, 149, 147, 0.367);
-  -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
-  box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
-}
-
-.contactDiv .contactInfo h1 {
-  font-family: "Roboto", sans-serif;
-  margin: 30px;
-  color: #ff8103;
-  font-size: 2.3rem;
-}
-
-.contactDiv .contactInfo ul {
-  margin-left: 20px;
-  margin-top: 40px;
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
-  list-style: none;
-  color: white;
-}
-
-.contactDiv .contactInfo li {
-  padding: 10px;
-}
-
-.contactDiv .contactInfo a {
-  text-decoration: none;
-  color: white;
-}
-
-.contactDiv .contactInfo a:hover {
-  color: #ff8103;
-}
-
-.contactDiv .contactInfo .logos {
-  height: 50px;
-  margin-top: 140px;
-  margin-left: 480px;
-}
-
-.contactDiv .contactInfo .logos #facebook,
-.contactDiv .contactInfo .logos #linktedIn,
-.contactDiv .contactInfo .logos #gitHub {
-  height: 50px;
-  margin-left: 10px;
-}
-
-.contactDiv .contactInfo .logos #mail {
-  height: 55px;
-}
-
-.educationDiv {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 1fr 25%;
-      grid-template-columns: 25% 1fr 25%;
-  -ms-grid-rows: 25% 1fr 25%;
-      grid-template-rows: 25% 1fr 25%;
-  height: 100vh;
-}
-
-.educationDiv .educationInfo {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  height: 430px;
-  width: 750px;
-  background-color: rgba(147, 149, 147, 0.367);
-  -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
-  box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
-}
-
-.educationDiv h1 {
-  text-align: center;
-  color: #ff8103;
-  font-family: "Roboto", sans-serif;
-  margin-top: 30px;
-}
-
-.educationDiv p {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
-  margin-top: 40px;
-  padding: 0 20px;
-}
-
-@media screen and (max-width: 694px) {
+@media screen and (min-width: 376px) {
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+  .navMobileLinks {
+    display: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #333333;
+  }
+  .wrapper {
+    max-width: 1521px;
+    margin: 0 auto;
+  }
+  .navHeader {
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+    padding-right: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  .navHeader .navLinks {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navHeader .navLinks a,
+  .navHeader p {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+  .navHeader .navLinks li {
+    padding: 0px 20px;
+  }
+  .navHeader .navLinks li a {
+    -webkit-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+  .navHeader .navLinks li a:hover {
+    color: #ff8103;
+  }
+  .navHeader .name {
+    color: #ff8103;
+  }
+  .landingPage {
+    background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, black, black);
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .landingPage h1 {
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+  .landingPage span {
+    color: #ff8103;
+  }
+  .landingPage p {
+    margin: 0 auto;
+    text-shadow: black 1px 0 20px;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white;
+  }
+  .landingPage .landingText {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 30%;
+    margin-left: 50px;
+    color: white;
+  }
+  .landingPage .landingPic {
+    color: white;
+    height: 100vh;
+  }
+  .landingPage .landingPic #me {
+    z-index: 1;
+    height: 400px;
+    position: relative;
+    top: 45%;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+  .aboutMeDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    height: 100vh;
+    background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, #ff7706, #ff7706);
+    background-size: cover;
+  }
+  .aboutMeDiv .aboutMeText {
+    position: relative;
+    overflow: auto;
+    width: 60%;
+    margin-top: 270px;
+    margin-left: 300px;
+    height: 500px;
+    -webkit-box-shadow: 8px 8px 30px 0px black;
+    box-shadow: 8px 8px 30px 0px black;
+    font-family: "Roboto", sans-serif;
+    background: rgba(47, 89, 130, 0.346);
+  }
+  .aboutMeDiv .meColor {
+    margin-left: 480px;
+    margin-top: 0px;
+    height: 400px;
+    max-width: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+  .aboutMeDiv p {
+    font-size: 1.4rem;
+    margin-top: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+  }
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    color: #ffffff;
+    background-image: linear-gradient(12deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(254, 139, 8, 0.12) 27%, rgba(254, 139, 8, 0.12) 66%, rgba(83, 83, 83, 0.17) 66%, rgba(83, 83, 83, 0.17) 100%), linear-gradient(321deg, rgba(254, 118, 6, 0.24) 0%, rgba(254, 118, 6, 0.24) 13%, rgba(231, 231, 231, 0.26) 13%, rgba(231, 231, 231, 0.26) 34%, rgba(248, 133, 8, 0.17) 34%, rgba(248, 133, 8, 0.17) 71%, rgba(112, 112, 112, 0) 71%, rgba(112, 112, 112, 0) 100%), linear-gradient(236deg, rgba(189, 189, 189, 0.03) 0%, rgba(189, 189, 189, 0.03) 47%, rgba(174, 98, 39, 0.32) 47%, rgba(174, 98, 39, 0.32) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(16, 15, 15, 0.28) 85%, rgba(16, 15, 15, 0.28) 100%), linear-gradient(96deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(8, 8, 8, 0.05) 98%, rgba(8, 8, 8, 0.05) 100%), linear-gradient(334deg, #050505, #050505);
+  }
+  .portfolio .projectOne .quiz {
+    margin-top: 20%;
+    margin-left: 15%;
+    height: 600px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .portfolio .projectOne .quiz .quizPic {
+    width: 400px;
+  }
+  .portfolio .projectOne .quiz p,
+  .portfolio .projectOne .quiz ul {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .portfolio .projectOne .quiz li {
+    padding: 10px;
+  }
+  .portfolio .projectOne .quiz a {
+    text-decoration: none;
+    color: #ff8103;
+  }
+  .portfolio .projecTwo .yatzy {
+    margin-top: 20%;
+    margin-left: 15%;
+    height: 600px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .portfolio .projecTwo .yatzy .yatzyPic {
+    width: 400px;
+  }
+  .portfolio .projecTwo .yatzy p,
+  .portfolio .projecTwo .yatzy ul {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .portfolio .projecTwo .yatzy li {
+    padding: 10px;
+  }
+  .portfolio .projecTwo .yatzy a {
+    text-decoration: none;
+    color: #ff8103;
+  }
+  .portfolio .projecThree .event {
+    margin-top: 20%;
+    margin-left: 15%;
+    height: 600px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .portfolio .projecThree .event .eventPic {
+    width: 400px;
+    height: 235px;
+  }
+  .portfolio .projecThree .event p,
+  .portfolio .projecThree .event ul {
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .portfolio .projecThree .event li {
+    padding: 10px;
+  }
+  .portfolio .projecThree .event a {
+    text-decoration: none;
+    color: #ff8103;
+  }
+  .contactDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% auto 25%;
+        grid-template-columns: 25% auto 25%;
+    -ms-grid-rows: 25% auto 25%;
+        grid-template-rows: 25% auto 25%;
+    height: 100vh;
+    background-image: linear-gradient(200deg, rgba(171, 171, 171, 0.13) 0%, rgba(171, 171, 171, 0.13) 23%, rgba(90, 90, 90, 0.21) 23%, rgba(90, 90, 90, 0.21) 48%, rgba(65, 65, 65, 0.18) 48%, rgba(65, 65, 65, 0.18) 61%, rgba(232, 232, 232, 0) 61%, rgba(232, 232, 232, 0) 100%), linear-gradient(126deg, rgba(194, 194, 194, 0) 0%, rgba(194, 194, 194, 0) 11%, rgba(127, 127, 127, 0.07) 11%, rgba(127, 127, 127, 0.07) 33%, rgba(117, 117, 117, 0.19) 33%, rgba(117, 117, 117, 0.19) 99%, rgba(248, 248, 248, 0.05) 99%, rgba(248, 248, 248, 0.05) 100%), linear-gradient(144deg, rgba(64, 64, 64, 0.01) 0%, rgba(64, 64, 64, 0.01) 33%, rgba(211, 211, 211, 0.1) 33%, rgba(211, 211, 211, 0.1) 50%, rgba(53, 53, 53, 0.35) 50%, rgba(53, 53, 53, 0.35) 75%, rgba(144, 144, 144, 0) 75%, rgba(144, 144, 144, 0) 100%), linear-gradient(329deg, black, black);
+  }
+  .contactDiv .contactInfo {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    height: 430px;
+    width: 750px;
+    background-color: rgba(147, 149, 147, 0.367);
+    -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+    box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+  }
+  .contactDiv .contactInfo h1 {
+    font-family: "Roboto", sans-serif;
+    margin: 30px;
+    color: #ff8103;
+    font-size: 2.3rem;
+  }
+  .contactDiv .contactInfo ul {
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    color: white;
+  }
+  .contactDiv .contactInfo li {
+    padding: 10px;
+  }
+  .contactDiv .contactInfo a {
+    text-decoration: none;
+    color: white;
+  }
+  .contactDiv .contactInfo a:hover {
+    color: #ff8103;
+  }
+  .contactDiv .contactInfo .logos {
+    height: 50px;
+    margin-top: 140px;
+    margin-left: 480px;
+  }
+  .contactDiv .contactInfo .logos #facebook,
+  .contactDiv .contactInfo .logos #linktedIn,
+  .contactDiv .contactInfo .logos #gitHub {
+    height: 50px;
+    margin-left: 10px;
+  }
+  .contactDiv .contactInfo .logos #mail {
+    height: 55px;
+  }
+  .educationDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 1fr 25%;
+        grid-template-columns: 25% 1fr 25%;
+    -ms-grid-rows: 25% 1fr 25%;
+        grid-template-rows: 25% 1fr 25%;
+    height: 100vh;
+  }
+  .educationDiv .educationInfo {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    height: 430px;
+    width: 750px;
+    background-color: rgba(147, 149, 147, 0.367);
+    -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+    box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+  }
+  .educationDiv h1 {
+    text-align: center;
+    color: #ff8103;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+  }
+  .educationDiv p {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    max-width: 375px;
   }
   html {
     scroll-behavior: smooth;
@@ -383,8 +337,8 @@ body {
   .navMobileLinks {
     display: inline;
   }
-  .navMobileLinks #navMobile {
-    z-index: 1;
+  .navMobileLinks .navMobile {
+    z-index: 2;
     position: absolute;
     background-color: black;
     width: 350px;
@@ -397,9 +351,9 @@ body {
   .navMobileLinks #hamburger {
     position: fixed;
     cursor: pointer;
-    left: 25%;
-    top: 0.5%;
-    z-index: 2;
+    left: 85%;
+    top: 2.5%;
+    z-index: 4;
   }
   .navMobileLinks .line {
     width: 30px;
@@ -407,7 +361,7 @@ body {
     background: #ff8103;
     margin: 5px;
   }
-  .navMobileLinks #navMobile a {
+  .navMobileLinks .navMobile a {
     display: block;
     padding: 20px 30px;
     font-size: 25px;
@@ -415,10 +369,10 @@ body {
     text-decoration: none;
     color: white;
   }
-  .navMobileLinks #navMobile a:hover {
+  .navMobileLinks .navMobile a:hover {
     color: orange;
   }
-  .navMobileLinks #navMobile.active {
+  .navMobileLinks .navMobile.active {
     position: fixed;
     left: 0px;
   }
@@ -464,6 +418,260 @@ body {
     top: 45%;
     -webkit-transform: translateY(-30%);
             transform: translateY(-30%);
+  }
+  .aboutMeDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100vh;
+    background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, #ff7706, #ff7706);
+    background-size: cover;
+  }
+  .aboutMeDiv .aboutMeText {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    margin-top: 90px;
+    margin-left: 5px;
+    height: auto;
+    -webkit-box-shadow: 8px 8px 30px 0px black;
+    box-shadow: 8px 8px 30px 0px black;
+    font-family: "Roboto", sans-serif;
+    background: rgba(47, 89, 130, 0.346);
+  }
+  .aboutMeDiv .meColor {
+    margin-left: 55px;
+    margin-top: 0px;
+    height: 200px;
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .aboutMeDiv p {
+    font-size: 1.2rem;
+    margin-top: 150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+  }
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    color: #ffffff;
+    background-image: linear-gradient(12deg, rgba(193, 193, 193, 0.05) 0%, rgba(193, 193, 193, 0.05) 2%, rgba(129, 129, 129, 0.05) 2%, rgba(129, 129, 129, 0.05) 27%, rgba(254, 139, 8, 0.12) 27%, rgba(254, 139, 8, 0.12) 66%, rgba(83, 83, 83, 0.17) 66%, rgba(83, 83, 83, 0.17) 100%), linear-gradient(321deg, rgba(254, 118, 6, 0.24) 0%, rgba(254, 118, 6, 0.24) 13%, rgba(231, 231, 231, 0.26) 13%, rgba(231, 231, 231, 0.26) 34%, rgba(248, 133, 8, 0.17) 34%, rgba(248, 133, 8, 0.17) 71%, rgba(112, 112, 112, 0) 71%, rgba(112, 112, 112, 0) 100%), linear-gradient(236deg, rgba(189, 189, 189, 0.03) 0%, rgba(189, 189, 189, 0.03) 47%, rgba(174, 98, 39, 0.32) 47%, rgba(174, 98, 39, 0.32) 58%, rgba(108, 108, 108, 0.05) 58%, rgba(108, 108, 108, 0.05) 85%, rgba(16, 15, 15, 0.28) 85%, rgba(16, 15, 15, 0.28) 100%), linear-gradient(96deg, rgba(53, 53, 53, 0.05) 0%, rgba(53, 53, 53, 0.05) 53%, rgba(44, 44, 44, 0.05) 53%, rgba(44, 44, 44, 0.05) 82%, rgba(77, 77, 77, 0.05) 82%, rgba(77, 77, 77, 0.05) 98%, rgba(8, 8, 8, 0.05) 98%, rgba(8, 8, 8, 0.05) 100%), linear-gradient(334deg, #050505, #050505);
+  }
+  .portfolio .projectOne {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .portfolio .projectOne .quiz {
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 200px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: -ms-grid;
+    display: grid;
+  }
+  .portfolio .projectOne .quiz .quizPic {
+    margin-left: 5px;
+    margin-top: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .portfolio .projectOne .quiz ul {
+    -ms-grid-row: 1;
+    grid-row: 1/1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .portfolio .projectOne .quiz li {
+    padding: 1px;
+  }
+  .portfolio .projectOne .quiz a {
+    text-decoration: none;
+    color: #ff8103;
+  }
+  .portfolio .projecTwo {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .portfolio .projecTwo .yatzy {
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 200px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: -ms-grid;
+    display: grid;
+  }
+  .portfolio .projecTwo .yatzy .yatzyPic {
+    margin-left: 5px;
+    margin-top: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .portfolio .projecTwo .yatzy ul {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+    margin-top: 50px;
+    margin-left: 40px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .portfolio .projecTwo .yatzy li {
+    padding: 1px;
+  }
+  .portfolio .projecTwo .yatzy a {
+    text-decoration: none;
+    color: #ff8103;
+  }
+  .portfolio .projecThree {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .portfolio .projecThree .event {
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 200px;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    display: -ms-grid;
+    display: grid;
+  }
+  .portfolio .projecThree .event .eventPic {
+    margin-left: 5px;
+    margin-top: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  .portfolio .projecThree .event ul {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  .portfolio .projecThree .event li {
+    padding: 1px;
+  }
+  .portfolio .projecThree .event a {
+    text-decoration: none;
+    color: #ff8103;
+  }
+  .contactDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5px auto 5px;
+        grid-template-columns: 5px auto 5px;
+    -ms-grid-rows: 20px auto 20px;
+        grid-template-rows: 20px auto 20px;
+    height: 100vh;
+    background-image: linear-gradient(200deg, rgba(171, 171, 171, 0.13) 0%, rgba(171, 171, 171, 0.13) 23%, rgba(90, 90, 90, 0.21) 23%, rgba(90, 90, 90, 0.21) 48%, rgba(65, 65, 65, 0.18) 48%, rgba(65, 65, 65, 0.18) 61%, rgba(232, 232, 232, 0) 61%, rgba(232, 232, 232, 0) 100%), linear-gradient(126deg, rgba(194, 194, 194, 0) 0%, rgba(194, 194, 194, 0) 11%, rgba(127, 127, 127, 0.07) 11%, rgba(127, 127, 127, 0.07) 33%, rgba(117, 117, 117, 0.19) 33%, rgba(117, 117, 117, 0.19) 99%, rgba(248, 248, 248, 0.05) 99%, rgba(248, 248, 248, 0.05) 100%), linear-gradient(144deg, rgba(64, 64, 64, 0.01) 0%, rgba(64, 64, 64, 0.01) 33%, rgba(211, 211, 211, 0.1) 33%, rgba(211, 211, 211, 0.1) 50%, rgba(53, 53, 53, 0.35) 50%, rgba(53, 53, 53, 0.35) 75%, rgba(144, 144, 144, 0) 75%, rgba(144, 144, 144, 0) 100%), linear-gradient(329deg, black, black);
+  }
+  .contactDiv .contactInfo {
+    margin: auto;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    height: 330px;
+    width: 375px;
+    background-color: rgba(147, 149, 147, 0.367);
+    -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+    box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+  }
+  .contactDiv .contactInfo h1 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    color: #ff8103;
+    font-size: 1.5rem;
+  }
+  .contactDiv .contactInfo ul {
+    margin-left: 20px;
+    margin-top: 70px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    color: white;
+  }
+  .contactDiv .contactInfo span {
+    display: none;
+  }
+  .contactDiv .contactInfo li {
+    padding: 5px;
+    text-align: center;
+  }
+  .contactDiv .contactInfo a {
+    text-decoration: none;
+    color: white;
+  }
+  .contactDiv .contactInfo .logos {
+    height: 50px;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .contactDiv .contactInfo .logos #facebook,
+  .contactDiv .contactInfo .logos #linktedIn,
+  .contactDiv .contactInfo .logos #gitHub {
+    height: 40px;
+    margin-left: 10px;
+  }
+  .contactDiv .contactInfo .logos #mail {
+    height: 43px;
+  }
+  .educationDiv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5px auto 5px;
+        grid-template-columns: 5px auto 5px;
+    -ms-grid-rows: 20px auto 20px;
+        grid-template-rows: 20px auto 20px;
+    height: 100vh;
+    background-image: linear-gradient(200deg, rgba(171, 171, 171, 0.13) 0%, rgba(171, 171, 171, 0.13) 23%, rgba(90, 90, 90, 0.21) 23%, rgba(90, 90, 90, 0.21) 48%, rgba(65, 65, 65, 0.18) 48%, rgba(65, 65, 65, 0.18) 61%, rgba(232, 232, 232, 0) 61%, rgba(232, 232, 232, 0) 100%), linear-gradient(126deg, rgba(194, 194, 194, 0) 0%, rgba(194, 194, 194, 0) 11%, rgba(127, 127, 127, 0.07) 11%, rgba(127, 127, 127, 0.07) 33%, rgba(117, 117, 117, 0.19) 33%, rgba(117, 117, 117, 0.19) 99%, rgba(248, 248, 248, 0.05) 99%, rgba(248, 248, 248, 0.05) 100%), linear-gradient(144deg, rgba(64, 64, 64, 0.01) 0%, rgba(64, 64, 64, 0.01) 33%, rgba(211, 211, 211, 0.1) 33%, rgba(211, 211, 211, 0.1) 50%, rgba(53, 53, 53, 0.35) 50%, rgba(53, 53, 53, 0.35) 75%, rgba(144, 144, 144, 0) 75%, rgba(144, 144, 144, 0) 100%), linear-gradient(329deg, black, black);
+  }
+  .educationDiv .educationInfo {
+    margin: auto;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    height: auto;
+    width: 375px;
+    background-color: rgba(147, 149, 147, 0.367);
+    -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+    box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
+  }
+  .educationDiv h1 {
+    font-family: "Roboto", sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    color: #ff8103;
+    font-size: 1.5rem;
+  }
+  .educationDiv p {
+    margin: 50px 20px 20px 20px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
