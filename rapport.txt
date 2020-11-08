@@ -1,0 +1,83 @@
+Scrum:
+
+Scrum är ett agilt arbetssätt där man delar in arbetet i olika kategorier.
+I ett scrum team finns:
+
+En produktägare:
+Produktägaren är beställaren av produkten. Det är produktägaren som får komma med ändringar och nya prioriterings ordningar.
+
+En scrum master:
+Scrum masters uppgift är att se till så att arbetet flyter på utan hinder. Om ett hinder eller en fråga uppkommer under arbetets gång så är det scrum masern man ska vända sig till i förstahand.
+
+Ett Team:
+Det är teamet som tillsammans bestämmer vad som ska göras, under hur lång tid och vem ska ska utföra uppgiften.
+
+I ett scrum projekt finns:
+
+En backlog:
+Det är produktägaren som ansvarar för backlogen.
+I backlogen finns alla önskemål och prioritets önskningar ifrån produktägaren.
+
+En sprint backlog:
+Det är dom bitarna som teamet åtar sig att hinna med under kommande sprint.
+
+En sprint:
+I ett scrum projekt så delas arbetet in i sprintar. En sprint kan vara mellan 3 och 30 dagar.
+När sprinten är klar så ska dom målen man hafft under sprinten vara klara.
+
+Daily scrum:
+Ett kort möte som man har varje dag. Scrum mastern går igenom teamet och frågar vad dom har gjort sedan sist, vad dom planerar att göra under dagen och om det finns några hinder.
+
+Sprint review:
+Under sprintreviewn så går man igenom med teamet, produktägaren och eventuellt andra intresserade vad man har åstakommit under den gågna sprinten.
+
+------------------------------------------------
+
+Grafisk profil:
+
+En grafisk probil är som en lista fast mer detaljerad med olika önskemål angående ett projekt.
+En grafisk profil för tex en hemsida behöver inte innehålla en färdig skiss på hur hemsidan ska se ut. Men i den grafiska profilen så ska det stå tydligt
+vilket typsnitt som ska användas, vilka olika färger som ska användas på tex knappar menyer mm.
+Man ska få en bra överblick över den färdga produkten bara genom att läsa igenom den grafiska profilen.
+
+------------------------------------------------
+
+Tillgänglighet:
+
+Det finns en mängd olika tillgänglighetskrav att följa för att få en hemsida anpassad för så många användare som möjligt.
+Det kan tex handla om att ha text med bra kontrast så att den blir lättläst även för någon med nedsatt syn, att inte ha en video som startar automatiskt med innehåll som blinkar kraftigt för att eventuellt inte starta en epileptiskt anfall hos användaren.
+Att vara konsekvent i navigation, struktur och utformning, se till att även användare med skärmläsare eller punktdisplay kan tadel av informationen på sidan.
+
+------------------------------------------------
+
+Diskussion:
+Srcum.
+
+Jag tycker att scrum är ett väldigt bra sätt att jobba utifrån. Det blir tydligt vem som ska göra vad och under hur långtid.
+Att man delar upp arbetet i olika sprintar ser jag som en stor fördel, framförallt i stora projekt där det kan kännas väldigt överväldigande till en början.
+Att ha daily scrums tycker jag också är väldigt bra där man i ett tidigt skede vid ett eventuellt hinder kan ta upp det med resten av teamet och eventuellt få hjälp att lösa hindret.
+
+En nackdel/svårighet med scrum så som jag ser det skulle eventuellt vara om produktägaren inte är insatt i scrum och inte förstår upplägget.
+Då kan scrum kanske ses som "slöseri med tid" pga av allt planerande och dagliga genomgångar.
+Produktägaren kanske också inte tar produktbacklogen på så stort allvar och lämmnar många frågetecken i den till teamet.
+
+-----------------------------------------------
+
+Diskussion:
+Grafisk profil.
+
+Jag har svårt att hitta några nackdelar med en grafisk profil. Att föklara för någon hur man vill att något ska se ut med bara ord kan vara väldigt svårt.
+Så en detaljerad grafisk profil med tydliga önskemål är bara possetivt.
+Det gör så att arbetet går fortare och man slipper fastna på ställen där man själv kanske tycker att det borde se ut på det här sättet, men jag undra hur beställaren egentligen vill ha det.
+
+
+----------------------------------------------
+
+Diskussion:
+Tillgänglighet.
+
+Att skapa en hemsida där alla människor i samhället kan ta del av all information på ett likvärdigt sätt är såklart målet för dom flesta. Men jag tror att det är otroligt svårt.
+Det beror också på vad för typ av hemsida man skapar.
+Jag tror att man måste bryta ner det och försökta tänka vilka människor vill jag nå ut till med den här hemsidan och sen försöka se till att den målgruppen klarar av att ta till sig informationen.
+Men bygger man en sida åt en myndighet som tex försäkringskassan.se så är det ju väldigt viktigt att så många männsikor som möjligt förstår hur sidan fungerar och kan ta del av informationen.
+I ett sånt projekt så är det viktigt att försöka få med små mycket Tillgänglighets hjälpmedel som det bara går. Men att man också ser till att man kan få informationen på annat sätt genom tex telefon kontakt eller mail kontakt.
