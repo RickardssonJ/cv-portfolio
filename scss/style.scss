@@ -44,11 +44,23 @@ sans-serif;
         padding-right: 40px;
         background-color: rgba(0, 0, 0, 0.703);
         position: fixed;
-        width: auto;
+        width: 100%;
         top: 0;
         height: 50px;
         font-size: 1.2rem;
         transition: top 0.3s;
+        animation-name: dropDown;
+        animation-duration: 1s;
+
+        @keyframes dropDown {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0%);
+            }
+        }
 
         .navLinks {
             list-style: none;
@@ -72,12 +84,6 @@ sans-serif;
         .navLinks li a:hover {
             color: $orangeColor;
         }
-
-        .name {
-            font-family: $roboto;
-            color: $orangeColor;
-            margin-left: 680px;
-        }
     }
 
     //Landing page with a short welcome message
@@ -97,12 +103,47 @@ sans-serif;
             color: $orangeColor;
         }
 
+        .slideRight {
+            animation-name: slideLeft;
+            animation-duration: 1s;
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
         p {
             margin: 0 auto;
             text-shadow: rgb(0, 0, 0) 1px 0 20px;
             font-weight: bold;
             font-size: 1.7rem;
             color: rgb(255, 255, 255);
+        }
+
+        .slideUp {
+            animation-name: slideUp;
+            animation-duration: 1.2s;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translatex(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translatex(0%);
+                opacity: 1;
+
+            }
         }
 
         .landingText {
@@ -318,9 +359,6 @@ sans-serif;
                 justify-items: end;
                 justify-content: end;
 
-
-
-
                 #facebook,
                 #linktedIn,
                 #gitHub {
@@ -401,9 +439,9 @@ sans-serif;
             z-index: 2;
             position: absolute;
             background-color: black;
-            width: 350px;
+            width: 355px;
             height: 100%;
-            left: -350px;
+            left: -355px;
             transition: 0.5s;
             padding-top: 200px;
         }
@@ -423,16 +461,22 @@ sans-serif;
             margin: 5px;
         }
 
+        @keyframes scaleUp {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
         .navMobile a {
             display: block;
             padding: 20px 30px;
             font-size: 25px;
             font-family: $roboto;
             text-decoration: none;
-            color: white;
-        }
-
-        .navMobile a:hover {
             color: orange;
         }
 
@@ -455,6 +499,23 @@ sans-serif;
             font-size: 4rem;
         }
 
+        .slideRight {
+            animation-name: slideRight;
+            animation-duration: 1s;
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+
         span {
             color: $orangeColor;
         }
@@ -465,6 +526,24 @@ sans-serif;
             font-weight: bold;
             font-size: 1.2rem;
             color: rgb(255, 255, 255);
+        }
+
+        .slideUp {
+            animation-name: slideUp;
+            animation-duration: 1.2s;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0%);
+                opacity: 1;
+
+            }
         }
 
         .landingText {
@@ -515,6 +594,22 @@ sans-serif;
             margin: 150px 5px 20px 5px;
             color: white;
         }
+
+        // .test p {
+        //     animation-name: dim;
+        //     animation-duration: 1.2s;
+        //     ;
+        // }
+
+        // @keyframes dim {
+        //     from {
+        //         opacity: 0;
+        //     }
+
+        //     to {
+        //         opacity: 1;
+        //     }
+        // }
     }
 
     .portfolio {

@@ -33,12 +33,36 @@
     padding-right: 40px;
     background-color: rgba(0, 0, 0, 0.703);
     position: fixed;
-    width: auto;
+    width: 100%;
     top: 0;
     height: 50px;
     font-size: 1.2rem;
     -webkit-transition: top 0.3s;
     transition: top 0.3s;
+    -webkit-animation-name: dropDown;
+            animation-name: dropDown;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  @-webkit-keyframes dropDown {
+    from {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    to {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @keyframes dropDown {
+    from {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    to {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
   }
   .navHeader .navLinks {
     list-style: none;
@@ -61,11 +85,6 @@
   .navHeader .navLinks li a:hover {
     color: #ff8103;
   }
-  .navHeader .name {
-    font-family: "Roboto", sans-serif;
-    color: #ff8103;
-    margin-left: 680px;
-  }
   .landingPage {
     background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, black, black);
     height: 100vh;
@@ -82,12 +101,72 @@
   .landingPage span {
     color: #ff8103;
   }
+  .landingPage .slideRight {
+    -webkit-animation-name: slideLeft;
+            animation-name: slideLeft;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  @-webkit-keyframes slideLeft {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      opacity: 1;
+    }
+  }
   .landingPage p {
     margin: 0 auto;
     text-shadow: black 1px 0 20px;
     font-weight: bold;
     font-size: 1.7rem;
     color: white;
+  }
+  .landingPage .slideUp {
+    -webkit-animation-name: slideUp;
+            animation-name: slideUp;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+  }
+  @-webkit-keyframes slideUp {
+    from {
+      -webkit-transform: translatex(100%);
+              transform: translatex(100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translatex(0%);
+              transform: translatex(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      -webkit-transform: translatex(100%);
+              transform: translatex(100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translatex(0%);
+              transform: translatex(0%);
+      opacity: 1;
+    }
   }
   .landingPage .landingText {
     font-family: "Roboto", sans-serif;
@@ -346,9 +425,9 @@
     z-index: 2;
     position: absolute;
     background-color: black;
-    width: 350px;
+    width: 355px;
     height: 100%;
-    left: -350px;
+    left: -355px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding-top: 200px;
@@ -366,15 +445,28 @@
     background: #ff8103;
     margin: 5px;
   }
+  @-webkit-keyframes scaleUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes scaleUp {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .navMobileLinks .navMobile a {
     display: block;
     padding: 20px 30px;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-    color: white;
-  }
-  .navMobileLinks .navMobile a:hover {
     color: orange;
   }
   .navMobileLinks .navMobile.active {
@@ -394,6 +486,36 @@
     margin-bottom: 20px;
     font-size: 4rem;
   }
+  .landingPage .slideRight {
+    -webkit-animation-name: slideRight;
+            animation-name: slideRight;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  @-webkit-keyframes slideRight {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slideRight {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      opacity: 1;
+    }
+  }
   .landingPage span {
     color: #ff8103;
   }
@@ -403,6 +525,36 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: white;
+  }
+  .landingPage .slideUp {
+    -webkit-animation-name: slideUp;
+            animation-name: slideUp;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+  }
+  @-webkit-keyframes slideUp {
+    from {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+      opacity: 1;
+    }
   }
   .landingPage .landingText {
     position: relative;

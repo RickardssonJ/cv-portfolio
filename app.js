@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // When the user scrolls down, the function will hide the nav bar and when the user scrolls up the function will show the navbar
-
   let startScrollpos = window.pageYOffset
 
   window.onscroll = () => {
@@ -26,4 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     startScrollpos = currentScrollPos
   }
+
+  //A function that gets a HTMLcollection, turn it into an array and then loops över it to chnage the styling of all the links in the nav bar for mobile view.
+  let mobileNavLinks = document.getElementById("hamburger")
+
+  mobileNavLinks.addEventListener("click", () => {
+    let mobileLinks = document.getElementsByClassName("mobileLinks")
+    let aTags = Array.from(mobileLinks)
+
+    aTags.forEach((element) => {
+      element.style.animation = "scaleUp 2.8s"
+    })
+  })
 })
