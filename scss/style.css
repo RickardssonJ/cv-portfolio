@@ -107,6 +107,7 @@
     background-size: cover;
   }
   .aboutMeDiv .aboutMeText {
+    text-align: left;
     position: absolute;
     overflow: auto;
     max-width: 60%;
@@ -408,9 +409,8 @@
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, #ff7706, #ff7706);
-    background-size: cover;
   }
   .aboutMeDiv .aboutMeText {
     position: relative;
@@ -434,9 +434,7 @@
   }
   .aboutMeDiv p {
     font-size: 1.2rem;
-    margin-top: 150px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 150px 5px 20px 5px;
     color: white;
   }
   .portfolio {
