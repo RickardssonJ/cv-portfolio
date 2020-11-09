@@ -34,6 +34,7 @@ sans-serif;
         margin: 0 auto;
     }
 
+    //All the styling for the navbar
     .navHeader {
         z-index: 3;
         display: flex;
@@ -79,13 +80,12 @@ sans-serif;
         }
     }
 
-    //Landing page
+    //Landing page with a short welcome message
     .landingPage {
         background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001000000000005%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, hsl(98, 0%, 0%), hsl(98, 0%, 0%));
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        //@include backGroundPicture;
         justify-items: center;
 
         h1 {
@@ -106,7 +106,6 @@ sans-serif;
         }
 
         .landingText {
-            //position: relative;
             font-family: $roboto;
             font-size: 1.5rem;
             margin-top: 30%;
@@ -124,12 +123,10 @@ sans-serif;
         height: 100vh;
         background-image: linear-gradient(326deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 6%, rgba(157, 157, 157, 0.21) 6%, rgba(157, 157, 157, 0.21) 29%, rgba(3, 3, 3, 0.51) 29%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(164deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 36%, rgba(157, 157, 157, 0.21) 36%, rgba(157, 157, 157, 0.21) 61%, rgba(3, 3, 3, 0.51) 61%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(336deg, rgba(236, 236, 236, 0.47) 0%, rgba(236, 236, 236, 0.47) 64%, rgba(157, 157, 157, 0.21) 64%, rgba(157, 157, 157, 0.21) 69%, rgba(3, 3, 3, 0.51) 69%, rgba(3, 3, 3, 0.51) 100%), linear-gradient(90deg, rgb(255, 119, 6), rgb(255, 119, 6));
         background-size: cover;
-        //@include backGroundPicture();
-
 
         .aboutMeText {
             position: absolute;
-            overflow: auto; //Gör så att texten inte flyter utanför text rutan
+            overflow: auto;
             max-width: 60%;
             margin-top: 270px;
             margin-left: 300px;
@@ -150,8 +147,6 @@ sans-serif;
             z-index: 2;
         }
 
-
-
         p {
             font-size: 1.4rem;
             margin-top: 150px;
@@ -159,10 +154,10 @@ sans-serif;
             margin-right: 40px;
             color: white;
         }
-
     }
 
     //Portfolio
+    //A mixin with the properties for the different event divs.
     @mixin project {
         margin-top: 20%;
         margin-left: 15%;
@@ -267,7 +262,7 @@ sans-serif;
         }
     }
 
-    //Contact
+    //Contact page
     .contactDiv {
         display: grid;
         grid-template-columns: 25% auto 25%;
@@ -329,13 +324,10 @@ sans-serif;
                     height: 55px;
                 }
             }
-
-
-
         }
     }
 
-    //Education
+    //Education page
     .educationDiv {
         display: grid;
         grid-template-columns: 25% 1fr 25%;
@@ -364,7 +356,7 @@ sans-serif;
         p {
             color: white;
             font-family: $roboto;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-top: 40px;
             padding: 0px 20px;
         }
@@ -373,7 +365,6 @@ sans-serif;
 
 
 //Mobile view
-//375px
 @media screen and (max-width: 900px) {
     * {
         box-sizing: border-box;
@@ -385,13 +376,14 @@ sans-serif;
         scroll-behavior: smooth;
     }
 
+    //Remove the desktop nav bar when in mobile view
     .navHeader {
         display: none;
     }
 
+    //Nav bar in mobile view
     .navMobileLinks {
         display: inline;
-
 
         .navMobile {
             z-index: 2;
@@ -471,7 +463,6 @@ sans-serif;
             margin-left: 50px;
             color: white;
         }
-
     }
 
     //About me
@@ -515,6 +506,8 @@ sans-serif;
     }
 
     .portfolio {
+
+        //A mixin with the properties for the different event divs.
         @mixin project {
             margin-top: 0px;
             margin-left: 0%;
@@ -548,7 +541,6 @@ sans-serif;
                     width: 100px;
                     height: 100px;
                 }
-
 
                 ul {
                     grid-row: 1/1;
@@ -585,7 +577,6 @@ sans-serif;
                     height: 100px;
                 }
 
-
                 ul {
                     grid-column: 3/3;
                     margin-top: 50px;
@@ -620,7 +611,6 @@ sans-serif;
                     height: 100px;
                 }
 
-
                 ul {
                     grid-column: 2/3;
                     margin-top: 60px;
@@ -641,6 +631,7 @@ sans-serif;
         }
     }
 
+    //Contact page
     .contactDiv {
         display: grid;
         grid-template-columns: 5px auto 5px;
@@ -708,15 +699,12 @@ sans-serif;
         }
     }
 
-    //Education
+    //Education page
     .educationDiv {
         display: grid;
         grid-template-columns: 5px auto 5px;
-        //grid-template-columns: 380px 1fr 380px;
         grid-template-rows: 20px auto 20px;
-        //grid-template-rows: 220px auto 220px;
         height: 100vh;
-        //color: #ffffff;
         background-image: linear-gradient(200deg, rgba(171, 171, 171, 0.13) 0%, rgba(171, 171, 171, 0.13) 23%, rgba(90, 90, 90, 0.21) 23%, rgba(90, 90, 90, 0.21) 48%, rgba(65, 65, 65, 0.18) 48%, rgba(65, 65, 65, 0.18) 61%, rgba(232, 232, 232, 0) 61%, rgba(232, 232, 232, 0) 100%), linear-gradient(126deg, rgba(194, 194, 194, 0) 0%, rgba(194, 194, 194, 0) 11%, rgba(127, 127, 127, 0.07) 11%, rgba(127, 127, 127, 0.07) 33%, rgba(117, 117, 117, 0.19) 33%, rgba(117, 117, 117, 0.19) 99%, rgba(248, 248, 248, 0.05) 99%, rgba(248, 248, 248, 0.05) 100%), linear-gradient(144deg, rgba(64, 64, 64, 0.01) 0%, rgba(64, 64, 64, 0.01) 33%, rgba(211, 211, 211, 0.1) 33%, rgba(211, 211, 211, 0.1) 50%, rgba(53, 53, 53, 0.35) 50%, rgba(53, 53, 53, 0.35) 75%, rgba(144, 144, 144, 0) 75%, rgba(144, 144, 144, 0) 100%), linear-gradient(329deg, hsl(148, 0%, 0%), hsl(148, 0%, 0%));
 
         .educationInfo {
