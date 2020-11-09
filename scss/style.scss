@@ -312,7 +312,14 @@ sans-serif;
             .logos {
                 height: 50px;
                 margin-top: 140px;
-                margin-left: 480px;
+                margin-right: 20px;
+                display: grid;
+                grid-template-columns: 65px 65px 65px 65px;
+                justify-items: end;
+                justify-content: end;
+
+
+
 
                 #facebook,
                 #linktedIn,

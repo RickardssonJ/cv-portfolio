@@ -267,7 +267,15 @@
   .contactDiv .contactInfo .logos {
     height: 50px;
     margin-top: 140px;
-    margin-left: 480px;
+    margin-right: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 65px 65px 65px 65px;
+        grid-template-columns: 65px 65px 65px 65px;
+    justify-items: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
   .contactDiv .contactInfo .logos #facebook,
   .contactDiv .contactInfo .logos #linktedIn,
