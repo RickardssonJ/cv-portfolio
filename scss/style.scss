@@ -479,10 +479,11 @@ sans-serif;
 
         .aboutMeText {
             position: relative;
-            overflow: auto; //Gör så att texten inte flyter utanför text rutan
-            width: 100%;
-            margin-top: 90px;
-            margin-left: 5px;
+            overflow: auto;
+            width: 99%;
+            // margin-top: 90px;
+            // margin-left: 5px;
+            margin: 90px auto;
             height: auto;
             -webkit-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
             -moz-box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 1);
@@ -498,6 +499,7 @@ sans-serif;
             max-width: 100%;
             position: absolute;
             z-index: 1;
+            text-align: center;
         }
 
         p {
@@ -516,7 +518,7 @@ sans-serif;
             margin-top: 0px;
             margin-left: 0%;
             height: 200px;
-            width: auto;
+            width: 99%;
             background: rgba(0, 0, 0, 0.500);
         }
 
@@ -648,7 +650,7 @@ sans-serif;
             grid-column-start: 2;
             grid-row-start: 2;
             height: 330px;
-            width: 375px;
+            width: 99%;
             background-color: rgba(147, 149, 147, 0.367);
             -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
             box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
@@ -713,9 +715,10 @@ sans-serif;
 
         .educationInfo {
             margin: auto;
+            grid-column-start: 2;
             grid-row-start: 2;
             height: auto;
-            width: 375px;
+            width: 99%;
             background-color: rgba(147, 149, 147, 0.367);
             -webkit-box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
             box-shadow: 11px 14px 22px -1px rgba(0, 0, 0, 0.66);
