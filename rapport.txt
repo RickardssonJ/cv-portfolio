@@ -81,3 +81,28 @@ Det beror också på vad för typ av hemsida man skapar.
 Jag tror att man måste bryta ner det och försökta tänka vilka människor vill jag nå ut till med den här hemsidan och sen försöka se till att den målgruppen klarar av att ta till sig informationen.
 Men bygger man en sida åt en myndighet som tex försäkringskassan.se så är det ju väldigt viktigt att så många männsikor som möjligt förstår hur sidan fungerar och kan ta del av informationen.
 I ett sånt projekt så är det viktigt att försöka få med små mycket Tillgänglighets hjälpmedel som det bara går. Men att man också ser till att man kan få informationen på annat sätt genom tex telefon kontakt eller mail kontakt.
+
+----------------------------------------------
+
+Mina tillgänglighetskrav
+
+1.1.1 (A) Beskriv med text allt innehåll som inte är text:
+Alla mina bilder innehåller en kort sammanfattning via alt atributet för att text en skärmläsare lättare ska kunna tala om för användaren vad bilden innehåller.
+
+1.3.1 (A) Ange i kod vad sidans olika delar har för roll:
+Alla mina rubriker är tydligt skriva med egna taggar i HTML koden och speparerade ifrån själva texten.
+
+1.3.2.(A) Presentera innehållet i en meningsfull ordning för alla:
+Allt mitt innehåll presenteras i en logisk ordning både i desktop och mobilt läge.
+
+1.4.11 (A) Använd tillräckliga kontraster i komponenter och grafik:
+Jag har tydlig kontrst mellan alla bilder/ikoner och bakgrund
+
+1.4.3 (A) Använd tillräcklig kontrast mellan text och bakgrund:
+Jag har tydlig kontrast mellan text och backgrunds färg igenom hela sidan.
+
+2.4.4 (A) Skriv tydliga länkar:
+Jag har tydliga länkar som är lätta att förstå vart dom tar användaren.
+
+3.1.1 (A) Ange sidans språk i koden:
+I min HTML lang tag så står det vilket språk sidan är på för att på så sätt underlätta för användaren med tex en skärmläsare och även med eventuell översättning av sidans språk via tex google.

@@ -376,6 +376,10 @@ sans-serif;
         scroll-behavior: smooth;
     }
 
+    body {
+        background-color: black;
+    }
+
     //Remove the desktop nav bar when in mobile view
     .navHeader {
         display: none;
@@ -393,14 +397,14 @@ sans-serif;
             height: 100%;
             left: -350px;
             transition: 0.5s;
-            padding-top: 300px;
+            padding-top: 200px;
         }
 
         #hamburger {
             position: fixed;
             cursor: pointer;
             left: 85%;
-            top: 2.5%;
+            top: 5.5%;
             z-index: 4;
         }
 

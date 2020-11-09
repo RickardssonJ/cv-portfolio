@@ -324,6 +324,9 @@
   html {
     scroll-behavior: smooth;
   }
+  body {
+    background-color: black;
+  }
   .navHeader {
     display: none;
   }
@@ -339,13 +342,13 @@
     left: -350px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    padding-top: 300px;
+    padding-top: 200px;
   }
   .navMobileLinks #hamburger {
     position: fixed;
     cursor: pointer;
     left: 85%;
-    top: 2.5%;
+    top: 5.5%;
     z-index: 4;
   }
   .navMobileLinks .line {
