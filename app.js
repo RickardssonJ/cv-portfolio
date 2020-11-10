@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navMobile = document.querySelector(".navMobile")
 
   //When cklicing om the the hamburger div the nav bar will unhide and hide
-  //When cklicing om the the hamburger div the nav bar will unhide and hide
   hamburger.addEventListener("click", () => {
     document.querySelector(".navMobile").classList.toggle("active")
   })

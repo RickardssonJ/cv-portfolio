@@ -35,8 +35,8 @@
     position: fixed;
     width: 100%;
     top: 0;
-    height: 50px;
-    font-size: 1.2rem;
+    height: 40px;
+    font-size: 1rem;
     -webkit-transition: top 0.3s;
     transition: top 0.3s;
     -webkit-animation-name: dropDown;
@@ -112,8 +112,8 @@
     height: 100vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 10%;
+        grid-template-columns: 1fr 10%;
     justify-items: center;
   }
   .landingPage h1 {
@@ -122,6 +122,10 @@
   }
   .landingPage span {
     color: #ff8103;
+  }
+  .landingPage .htmlTags {
+    color: rgba(255, 128, 0, 0.76);
+    font-size: 3.5rem;
   }
   .landingPage .slideRight {
     -webkit-animation-name: slideLeft;
@@ -193,7 +197,7 @@
   .landingPage .landingText {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-left: 50px;
     color: white;
   }
@@ -558,6 +562,10 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: white;
+  }
+  .landingPage .htmlTags {
+    color: rgba(255, 128, 0, 0.76);
+    font-size: 3.5rem;
   }
   .landingPage .slideUp {
     -webkit-animation-name: slideUp;
