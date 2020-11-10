@@ -1,229 +1,182 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./scss/style.css" />
-    <title>Portfolio</title>
-  </head>
 
-  <!--Navbar for desktop view-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./scss/style.css" />
+  <title>Portfolio</title>
+</head>
 
-  <body>
-    <div class="wrapper">
-      <header id="navBar" class="navHeader">
-        <nav>
-          <ul class="navLinks">
-            <li><a href="#home">Hem</a></li>
-            <li><a href="#aboutMe">Om mig</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Kontakta mig</a></li>
-            <li><a href="#education">Nackademin</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+<!--Navbar for desktop view-->
 
-    <!--Navbar for mobile view-->
-    <div class="navMobileLinks">
-      <div id="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+<body>
+  <div class="wrapper">
+    <header id="navBar" class="navHeader">
       <nav>
-        <div class="navMobile">
-          <a class="mobileLinks" href="#home">Hem</a>
-          <a class="mobileLinks" href="#aboutMe">Om mig</a>
-          <a class="mobileLinks" href="#portfolio">Portfolio</a>
-          <a class="mobileLinks" href="#contact">Kontakt</a>
-          <a class="mobileLinks" href="#education">Nackademin</a>
-        </div>
+        <ul class="navLinks">
+          <li><a href="#home">Hem</a></li>
+          <li><a href="#aboutMe">Om mig</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Kontakta mig</a></li>
+          <li><a href="#education">Nackademin</a></li>
+        </ul>
       </nav>
-    </div>
+    </header>
+  </div>
 
-    <!--Landing page-->
-    <div class="wrapper">
-      <div id="home" class="landingPage">
-        <div class="landingText">
-          <h1 class="slideRight">Hej mitt namn är <span>Jimmy</span></h1>
-          <p class="slideUp">
-            På den här sidan kommer du att kunna läsa mer om mig.
+  <!--Navbar for mobile view-->
+  <div class="navMobileLinks">
+    <div id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav>
+      <div class="navMobile">
+        <a class="mobileLinks" href="#home">Hem</a>
+        <a class="mobileLinks" href="#aboutMe">Om mig</a>
+        <a class="mobileLinks" href="#portfolio">Portfolio</a>
+        <a class="mobileLinks" href="#contact">Kontakt</a>
+        <a class="mobileLinks" href="#education">Nackademin</a>
+      </div>
+    </nav>
+  </div>
+
+  <!--Landing page-->
+  <div class="wrapper">
+    <div id="home" class="landingPage">
+      <div class="landingText">
+        <h1 class="slideRight">Hej mitt namn är <span>Jimmy</span></h1>
+        <p class="slideUp">
+          På den här sidan kommer du att kunna läsa mer om mig.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--About me page-->
+  <div class="wrapper">
+    <div id="aboutMe" class="aboutMeDiv">
+      <img class="meColor" src="./pictures/profilOrange.png" alt="Profil bild i färg" />
+      <div class="aboutMeText">
+        <div class="test">
+          <p>
+            Mitt namn är Jimmy Rickardsson. Jag är 33år gammal och bor i
+            Stockholm. <br />
+            <br />
+            Jag är i grund och botten en utbildad elektriker med många års
+            erfarenhet inom byggbranchen men jag har alltid haft ett stort
+            intresse för IT och programmering och nu har jag tagigt beslutet
+            att följa min dröm och bli en duktig utvecklare! <br />
+            <br />
+            För tillfället så studerar jag mitt första år på Nackademins
+            yrkeshögskola i Solna och utbildningen web developer fullstack
+            opensource. <br />
+            Det läggs mycket fokus på både front end och backend, men även på
+            agilt arbete. <br />
+            <br />
+            Jag beräknas vara klar med min utbildning år 2021.
           </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--About me page-->
-    <div class="wrapper">
-      <div id="aboutMe" class="aboutMeDiv">
-        <img
-          class="meColor"
-          src="./pictures/profilOrange.png"
-          alt="Profil bild i färg"
-        />
-        <div class="aboutMeText">
-          <div class="test">
-            <p>
-              Mitt namn är Jimmy Rickardsson. Jag är 33år gammal och bor i
-              Stockholm. <br />
-              <br />
-              Jag är i grund och botten en utbildad elektriker med många års
-              erfarenhet inom byggbranchen men jag har alltid haft ett stort
-              intresse för IT och programmering och nu har jag tagigt beslutet
-              att följa min dröm och bli en duktig utvecklare! <br />
-              <br />
-              För tillfället så studerar jag mitt första år på Nackademins
-              yrkeshögskola i Solna och utbildningen web developer fullstack
-              opensource. <br />
-              Det läggs mycket fokus på både front end och backend, men även på
-              agilt arbete. <br />
-              <br />
-              Jag beräknas vara klar med min utbildning år 2021.
-            </p>
-          </div>
+  <!--Portfolio page-->
+  <div class="wrapper">
+    <div id="portfolio" class="portfolio">
+      <div class="projectOne">
+        <div class="quiz">
+          <img class="quizPic" src="./pictures/quiz-time-678x381.jpg" alt="quiz skylt i neon färg" />
+          <ul>
+            <li>Quiz där frågorna hämtas via ett API</li>
+            <li>All javaScript bygger på OOP</li>
+            <li>
+              <a href="https://github.com/RickardssonJ/Quiz" target="_blank">Till github repot</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <!--Portfolio page-->
-    <div class="wrapper">
-      <div id="portfolio" class="portfolio">
-        <div class="projectOne">
-          <div class="quiz">
-            <img
-              class="quizPic"
-              src="./pictures/quiz-time-678x381.jpg"
-              alt="quiz skylt i neon färg"
-            />
-            <ul>
-              <li>Quiz där frågorna hämtas via ett API</li>
-              <li>All javaScript bygger på OOP</li>
-              <li>
-                <a href="https://github.com/RickardssonJ/Quiz" target="_blank"
-                  >Till github repot</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="projecTwo">
-          <div class="yatzy">
-            <img
-              class="yatzyPic"
-              src="./pictures/yatzyjpg.jpg"
-              alt="Yatzy bild med två tärningar"
-            />
-            <ul>
-              <li>
-                Klassiskt yatzy där fokus låg på att bygga projektet
-                objektorienterat
-              </li>
-              <li>All javaScript bygger på OOP</li>
-              <li>
-                <a
-                  href="https://github.com/RickardssonJ/finalYatzy"
-                  target="_blank"
-                  >Till github repot</a
-                >
-              </li>
-              <!-- <li>Till github repot</li> -->
-              <!-- </a> -->
-            </ul>
-          </div>
-        </div>
-        <div class="projecThree">
-          <div class="event">
-            <img
-              class="eventPic"
-              src="./pictures/party.jpg"
-              alt="Bild på ett musik event"
-            />
-            <ul>
-              <li>
-                I det här projektet låg fokus på att kunna hämta och lagra data
-                i localstorage
-              </li>
-              <li>All javaScript bygger på OOP</li>
-              <li>
-                <a href="https://github.com/RickardssonJ/ACME" target="_blank"
-                  >Till github repot</a
-                >
-              </li>
-              <!-- <li>Till github repot</li> -->
-              <!-- </a> -->
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Contact page-->
-    <div class="wrapper">
-      <div id="contact" class="contactDiv">
-        <div class="contactInfo">
-          <h1>Kom i kontakt med mig</h1>
+      <div class="projecTwo">
+        <div class="yatzy">
+          <img class="yatzyPic" src="./pictures/yatzyjpg.jpg" alt="Yatzy bild med två tärningar" />
           <ul>
             <li>
-              <span>Mail.</span
-              ><a href="mailto:Rickardssonjimmy@gmail.com"
-                >Rickardssonjimmy@gmail.com</a
-              >
+              Klassiskt yatzy där fokus låg på att bygga projektet
+              objektorienterat
             </li>
-            <li><span>Telefon.</span> 076-244 93 14</li>
+            <li>All javaScript bygger på OOP</li>
+            <li>
+              <a href="https://github.com/RickardssonJ/finalYatzy" target="_blank">Till github repot</a>
+            </li>
           </ul>
-          <div class="logos">
-            <a href="mailto:Rickardssonjimmy@gmail.com"
-              ><img id="mail" src="./pictures/mail.png" alt="ett brev"
-            /></a>
-            <a href="https://github.com/RickardssonJ" target="_blank"
-              ><img id="gitHub" src="./pictures/github.png" alt="Githubs logga"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/jimmy-rickardsson-829072173/"
-              target="_blank"
-              ><img
-                id="linktedIn"
-                src="./pictures/linkedin.png"
-                alt="Linkedin logga"
-            /></a>
-            <a
-              href="https://www.facebook.com/jimmy.rickardsson.3"
-              target="_blank"
-              ><img
-                id="facebook"
-                src="./pictures/facebook.png"
-                alt="Facebook logga"
-            /></a>
-          </div>
+        </div>
+      </div>
+      <div class="projecThree">
+        <div class="event">
+          <img class="eventPic" src="./pictures/party.jpg" alt="Bild på ett musik event" />
+          <ul>
+            <li>
+              I det här projektet låg fokus på att kunna hämta och lagra data
+              i localstorage
+            </li>
+            <li>All javaScript bygger på OOP</li>
+            <li>
+              <a href="https://github.com/RickardssonJ/ACME" target="_blank">Till github repot</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Education page-->
-    <div class="wrapper">
-      <div id="education" class="educationDiv">
-        <div class="educationInfo">
-          <h1>Min utbildning</h1>
-          <p>
-            Jag studerar vid Nackademins yrkeshögskola i solna. <br />
-            Det är en tvåårig utbildning som heter web developer fullstack
-            opensource. <br />
-            Under utbildningen kommer vi få lära oss både frontend och backend
-            prograrmmering i språk som tex JavaScript, PHP, NodeJS mm. <br />
-            Det är stor fokus på LIA (Lära i arbetet) som innebär att vi kommer
-            göra längre perioder praktik ute på olika IT företag, där vi
-            tillskillnad ifrån en vanlig praktigkant ska kunna gå direkt in i
-            ett arbetslag och bidra till det dagliga arbetet.
-          </p>
+  <!--Contact page-->
+  <div class="wrapper">
+    <div id="contact" class="contactDiv">
+      <div class="contactInfo">
+        <h1>Kom i kontakt med mig</h1>
+        <ul>
+          <li>
+            <span>Mail.</span><a href="mailto:Rickardssonjimmy@gmail.com">Rickardssonjimmy@gmail.com</a>
+          </li>
+          <li><span>Telefon.</span> 076-244 93 14</li>
+        </ul>
+        <div class="logos">
+          <a href="mailto:Rickardssonjimmy@gmail.com"><img id="mail" src="./pictures/mail.png" alt="ett brev" /></a>
+          <a href="https://github.com/RickardssonJ" target="_blank"><img id="gitHub" src="./pictures/github.png"
+              alt="Githubs logga" /></a>
+          <a href="https://www.linkedin.com/in/jimmy-rickardsson-829072173/" target="_blank"><img id="linktedIn"
+              src="./pictures/linkedin.png" alt="Linkedin logga" /></a>
+          <a href="https://www.facebook.com/jimmy.rickardsson.3" target="_blank"><img id="facebook"
+              src="./pictures/facebook.png" alt="Facebook logga" /></a>
         </div>
       </div>
     </div>
-    <!--JavaScript-->
-    <script src="app.js"></script>
-  </body>
+  </div>
+
+  <!--Education page-->
+  <div class="wrapper">
+    <div id="education" class="educationDiv">
+      <div class="educationInfo">
+        <h1>Min utbildning</h1>
+        <p>
+          Jag studerar vid Nackademins yrkeshögskola i solna. <br />
+          Det är en tvåårig utbildning som heter web developer fullstack
+          opensource. <br />
+          Under utbildningen kommer vi få lära oss både frontend och backend
+          prograrmmering i språk som tex JavaScript, PHP, NodeJS mm. <br />
+          Det är stor fokus på LIA (Lära i arbetet) som innebär att vi kommer
+          göra längre perioder praktik ute på olika IT företag, där vi
+          tillskillnad ifrån en vanlig praktigkant ska kunna gå direkt in i
+          ett arbetslag och bidra till det dagliga arbetet.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--JavaScript-->
+  <script src="app.js"></script>
+</body>
+
 </html>

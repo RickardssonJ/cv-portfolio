@@ -71,13 +71,11 @@ sans-serif;
             font-family: $roboto;
             color: white;
             text-decoration: none;
-
         }
 
         .navLinks li {
             padding: 0px 20px;
             transform: scale(1.1);
-
         }
 
         .navLinks li a {
@@ -155,7 +153,6 @@ sans-serif;
             to {
                 transform: translatex(0%);
                 opacity: 1;
-
             }
         }
 
@@ -166,7 +163,6 @@ sans-serif;
             margin-left: 50px;
             color: white;
         }
-
     }
 
     //About me
@@ -269,7 +265,6 @@ sans-serif;
                 overflow: auto;
                 margin-top: 30%;
 
-
                 .yatzyPic {
                     width: 100%;
                 }
@@ -300,7 +295,6 @@ sans-serif;
                 border-radius: 25px;
                 overflow: auto;
                 margin-top: 30%;
-
 
                 .eventPic {
                     width: 100%;
@@ -566,7 +560,6 @@ sans-serif;
             to {
                 transform: translateY(0%);
                 opacity: 1;
-
             }
         }
 
