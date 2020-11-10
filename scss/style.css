@@ -77,6 +77,8 @@
   }
   .navHeader .navLinks li {
     padding: 0px 20px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .navHeader .navLinks li a {
     -webkit-transition: color 0.3s ease 0s;
@@ -84,6 +86,26 @@
   }
   .navHeader .navLinks li a:hover {
     color: #ff8103;
+  }
+  @-webkit-keyframes scaleUpUp {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scaleUpUp {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
   }
   .landingPage {
     background-image: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%), linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%, rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%, rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%, rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%), linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%, rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%, rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%, rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%), linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%), linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%, rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%, rgba(247, 114, 7, 0.06) 50%, rgba(247, 114, 7, 0.06) 62.5%, rgba(251, 129, 5, 0.13) 62.5%, rgba(251, 129, 5, 0.13) 75%, rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%), linear-gradient(97deg, rgba(249, 93, 5, 0.17) 0%, rgba(249, 93, 5, 0.17) 16.667%, rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%, rgba(170, 170, 170, 0) 33.334%, rgba(170, 170, 170, 0) 50.001%, rgba(241, 119, 15, 0) 50.001%, rgba(241, 119, 15, 0) 66.668%, rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.335%, rgba(146, 146, 146, 0) 83.335%, rgba(146, 146, 146, 0) 100.002%), linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%, rgba(247, 105, 6, 0.07) 25%, rgba(247, 105, 6, 0.07) 50%, rgba(4, 4, 4, 0) 50%, rgba(4, 4, 4, 0) 75%, rgba(227, 227, 227, 0) 75%, rgba(227, 227, 227, 0) 100%), linear-gradient(90deg, black, black);
@@ -187,6 +209,7 @@
   }
   .aboutMeDiv .aboutMeText {
     text-align: left;
+    top: 10px;
     position: absolute;
     overflow: auto;
     max-width: 60%;
@@ -198,6 +221,7 @@
     box-shadow: 8px 8px 30px 0px black;
     font-family: "Roboto", sans-serif;
     background: rgba(47, 89, 130, 0.346);
+    z-index: 1;
   }
   .aboutMeDiv .meColor {
     margin-left: auto;
@@ -225,20 +249,22 @@
   .portfolio .projectOne .quiz {
     margin-top: 20%;
     margin-left: 15%;
-    height: 600px;
-    width: 400px;
+    height: 55%;
+    width: 79%;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+    overflow: auto;
+    margin-top: 30%;
   }
   .portfolio .projectOne .quiz .quizPic {
-    width: 400px;
+    width: 100%;
   }
   .portfolio .projectOne .quiz p,
   .portfolio .projectOne .quiz ul {
-    margin-top: 50px;
-    margin-left: 40px;
+    margin: 0 auto;
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
+    list-style: none;
   }
   .portfolio .projectOne .quiz li {
     padding: 10px;
@@ -250,20 +276,22 @@
   .portfolio .projecTwo .yatzy {
     margin-top: 20%;
     margin-left: 15%;
-    height: 600px;
-    width: 400px;
+    height: 55%;
+    width: 79%;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+    overflow: auto;
+    margin-top: 30%;
   }
   .portfolio .projecTwo .yatzy .yatzyPic {
-    width: 400px;
+    width: 100%;
   }
   .portfolio .projecTwo .yatzy p,
   .portfolio .projecTwo .yatzy ul {
-    margin-top: 50px;
-    margin-left: 40px;
+    margin: 0 auto;
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
+    list-style: none;
   }
   .portfolio .projecTwo .yatzy li {
     padding: 10px;
@@ -275,21 +303,22 @@
   .portfolio .projecThree .event {
     margin-top: 20%;
     margin-left: 15%;
-    height: 600px;
-    width: 400px;
+    height: 55%;
+    width: 79%;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+    overflow: auto;
+    margin-top: 30%;
   }
   .portfolio .projecThree .event .eventPic {
-    width: 400px;
-    height: 235px;
+    width: 100%;
   }
   .portfolio .projecThree .event p,
   .portfolio .projecThree .event ul {
-    margin-top: 50px;
-    margin-left: 40px;
+    margin: 0 auto;
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
+    list-style: none;
   }
   .portfolio .projecThree .event li {
     padding: 10px;
@@ -438,6 +467,10 @@
     left: 85%;
     top: 5.5%;
     z-index: 4;
+    -webkit-animation-name: scaleUp;
+            animation-name: scaleUp;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
   }
   .navMobileLinks .line {
     width: 30px;
@@ -623,8 +656,7 @@
     display: grid;
   }
   .portfolio .projectOne .quiz .quizPic {
-    margin-left: 5px;
-    margin-top: 50%;
+    margin: auto;
     width: 100px;
     height: 100px;
   }
@@ -663,8 +695,7 @@
     display: grid;
   }
   .portfolio .projecTwo .yatzy .yatzyPic {
-    margin-left: 5px;
-    margin-top: 50%;
+    margin: auto;
     width: 100px;
     height: 100px;
   }
@@ -698,8 +729,7 @@
     display: grid;
   }
   .portfolio .projecThree .event .eventPic {
-    margin-left: 5px;
-    margin-top: 50%;
+    margin: auto;
     width: 100px;
     height: 100px;
   }
