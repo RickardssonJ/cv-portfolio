@@ -7,7 +7,7 @@ En produktägare:
 Produktägaren är beställaren av produkten. Det är produktägaren som får komma med ändringar och nya prioriterings ordningar.
 
 En scrum master:
-Scrum masters uppgift är att se till så att arbetet flyter på utan hinder. Om ett hinder eller en fråga uppkommer under arbetets gång så är det scrum masern man ska vända sig till i förstahand.
+Scrum masters uppgift är att se till så att arbetet flyter på utan hinder. Om ett hinder eller en fråga uppkommer under arbetets gång så är det scrum mastern man ska vända sig till i förstahand.
 
 Ett Team:
 Det är teamet som tillsammans bestämmer vad som ska göras, under hur lång tid och vem ska ska utföra uppgiften.
@@ -19,17 +19,17 @@ Det är produktägaren som ansvarar för backlogen.
 I backlogen finns alla önskemål och prioritets önskningar ifrån produktägaren.
 
 En sprint backlog:
-Det är dom bitarna som teamet åtar sig att hinna med under kommande sprint.
+Det är dom bitarna som teamet åtar sig att hinna med under den kommande sprinten.
 
 En sprint:
 I ett scrum projekt så delas arbetet in i sprintar. En sprint kan vara mellan 3 och 30 dagar.
-När sprinten är klar så ska dom målen man hafft under sprinten vara klara.
+När sprinten är klar så ska dom målen man haft under sprinten vara klara.
 
 Daily scrum:
 Ett kort möte som man har varje dag. Scrum mastern går igenom teamet och frågar vad dom har gjort sedan sist, vad dom planerar att göra under dagen och om det finns några hinder.
 
 Sprint review:
-Under sprintreviewn så går man igenom med teamet, produktägaren och eventuellt andra intresserade vad man har åstakommit under den gågna sprinten.
+Under sprintreviewn så går man igenom med teamet, produktägaren och eventuellt andra intresserade vad man har åstadkommit under den gågna sprinten.
 
 ------------------------------------------------
 
@@ -38,7 +38,7 @@ Grafisk profil:
 En grafisk probil är som en lista fast mer detaljerad med olika önskemål angående ett projekt.
 En grafisk profil för tex en hemsida behöver inte innehålla en färdig skiss på hur hemsidan ska se ut. Men i den grafiska profilen så ska det stå tydligt
 vilket typsnitt som ska användas, vilka olika färger som ska användas på tex knappar menyer mm.
-Man ska få en bra överblick över den färdga produkten bara genom att läsa igenom den grafiska profilen.
+Man ska få en bra överblick över den färdiga produkten bara genom att läsa igenom den grafiska profilen.
 
 ------------------------------------------------
 
@@ -59,15 +59,15 @@ Att ha daily scrums tycker jag också är väldigt bra där man i ett tidigt ske
 
 En nackdel/svårighet med scrum så som jag ser det skulle eventuellt vara om produktägaren inte är insatt i scrum och inte förstår upplägget.
 Då kan scrum kanske ses som "slöseri med tid" pga av allt planerande och dagliga genomgångar.
-Produktägaren kanske också inte tar produktbacklogen på så stort allvar och lämmnar många frågetecken i den till teamet.
+Produktägaren kanske också inte tar produktbacklogen på så stort allvar och lämnar många frågetecken i den till teamet.
 
 -----------------------------------------------
 
 Diskussion:
 Grafisk profil.
 
-Jag har svårt att hitta några nackdelar med en grafisk profil. Att föklara för någon hur man vill att något ska se ut med bara ord kan vara väldigt svårt.
-Så en detaljerad grafisk profil med tydliga önskemål är bara possetivt.
+Jag har svårt att hitta några nackdelar med en grafisk profil. Att förklara för någon hur man vill att något ska se ut med bara ord kan vara väldigt svårt.
+Så en detaljerad grafisk profil med tydliga önskemål är bara positivt.
 Det gör så att arbetet går fortare och man slipper fastna på ställen där man själv kanske tycker att det borde se ut på det här sättet, men jag undra hur beställaren egentligen vill ha det.
 
 
@@ -79,7 +79,7 @@ Tillgänglighet.
 Att skapa en hemsida där alla människor i samhället kan ta del av all information på ett likvärdigt sätt är såklart målet för dom flesta. Men jag tror att det är otroligt svårt.
 Det beror också på vad för typ av hemsida man skapar.
 Jag tror att man måste bryta ner det och försökta tänka vilka människor vill jag nå ut till med den här hemsidan och sen försöka se till att den målgruppen klarar av att ta till sig informationen.
-Men bygger man en sida åt en myndighet som tex försäkringskassan.se så är det ju väldigt viktigt att så många männsikor som möjligt förstår hur sidan fungerar och kan ta del av informationen.
+Men bygger man en sida åt en myndighet som tex försäkringskassan.se så är det ju väldigt viktigt att så många människor som möjligt förstår hur sidan fungerar och kan ta del av informationen.
 I ett sånt projekt så är det viktigt att försöka få med små mycket Tillgänglighets hjälpmedel som det bara går. Men att man också ser till att man kan få informationen på annat sätt genom tex telefon kontakt eller mail kontakt.
 
 ----------------------------------------------
@@ -87,19 +87,19 @@ I ett sånt projekt så är det viktigt att försöka få med små mycket Tillg�
 Mina tillgänglighetskrav
 
 1.1.1 (A) Beskriv med text allt innehåll som inte är text:
-Alla mina bilder innehåller en kort sammanfattning via alt atributet för att text en skärmläsare lättare ska kunna tala om för användaren vad bilden innehåller.
+Alla mina bilder innehåller en kort sammanfattning via alt attributet för att text en skärmläsare lättare ska kunna tala om för användaren vad bilden innehåller.
 
 1.3.1 (A) Ange i kod vad sidans olika delar har för roll:
-Alla mina rubriker är tydligt skriva med egna taggar i HTML koden och speparerade ifrån själva texten.
+Alla mina rubriker är tydligt skriva med egna taggar i HTML koden och separerade ifrån själva texten.
 
 1.3.2.(A) Presentera innehållet i en meningsfull ordning för alla:
 Allt mitt innehåll presenteras i en logisk ordning både i desktop och mobilt läge.
 
 1.4.11 (A) Använd tillräckliga kontraster i komponenter och grafik:
-Jag har tydlig kontrst mellan alla bilder/ikoner och bakgrund
+Jag har tydlig kontrast mellan alla bilder/ikoner och bakgrund
 
 1.4.3 (A) Använd tillräcklig kontrast mellan text och bakgrund:
-Jag har tydlig kontrast mellan text och backgrunds färg igenom hela sidan.
+Jag har tydlig kontrast mellan text och bakgrundsfärg igenom hela sidan.
 
 2.4.4 (A) Skriv tydliga länkar:
 Jag har tydliga länkar som är lätta att förstå vart dom tar användaren.
