@@ -77,12 +77,10 @@
   }
   .navHeader .navLinks li {
     padding: 0px 20px;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .navHeader .navLinks li a {
-    -webkit-transition: color 0.3s ease 0s;
-    transition: color 0.3s ease 0s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .navHeader .navLinks li a:hover {
     color: #ff8103;
@@ -394,9 +392,29 @@
   .contactDiv .contactInfo .logos #gitHub {
     height: 50px;
     margin-left: 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   .contactDiv .contactInfo .logos #mail {
     height: 55px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .contactDiv .contactInfo #mail:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .contactDiv .contactInfo #gitHub:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .contactDiv .contactInfo #linktedIn:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .contactDiv .contactInfo #facebook:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .educationDiv {
     display: -ms-grid;
