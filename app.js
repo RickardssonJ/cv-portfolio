@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".navMobile").classList.toggle("active")
   })
 
-  //When cklicing om the the navMobile div the nav bar will unhide and hide
+  //When cklicing on the the navMobile div the nav bar will unhide and hide
   navMobile.addEventListener("click", () => {
     document.querySelector(".navMobile").classList.toggle("active")
   })
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startScrollpos = currentScrollPos
   }
 
-  //A function that gets a HTMLcollection, turn it into an array and then loops över it to chnage the styling of all the links in the nav bar for mobile view.
+  //A function that gets a HTMLcollection, turns it into an array and then loops över it to chnage the styling of all the links in the nav bar for mobile view.
   let mobileNavLinks = document.getElementById("hamburger")
 
   mobileNavLinks.addEventListener("click", () => {
